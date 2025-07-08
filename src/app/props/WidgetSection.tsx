@@ -53,9 +53,9 @@ export default function WidgetSection({ title, url, items }: WidgetSectionProps)
             </div>
           )}
 
-          <h3 className=" my-2">
-            <Link className="story-title font" href={item.url}>{item.title}</Link>
-          </h3>
+          <h6 className="story-title my-2">
+            <Link className="font story-title" href={item.url}>{item.title}</Link>
+          </h6>
 
           <ul className="byline list-unstyled">
             <li className="update-font">{item.date}</li>

@@ -52,7 +52,7 @@ export default function MainPostWithNextPosts() {
             </div>
             <div>
               <h3 className="story-title my-2 font">
-                <Link className='story-title' href={mainPost.href} title={mainPost.title}>{mainPost.title}</Link>
+                <Link className='story-title-big' href={mainPost.href} title={mainPost.title}>{mainPost.title}</Link>
               </h3>
               <ul className="byline list-unstyled d-flex">
                 <li className="custom_byline me-2 update-font">
@@ -91,7 +91,7 @@ export default function MainPostWithNextPosts() {
                     </div>
                     <div>
                       <h3 className="story-title my-2 font">
-                        <Link className='story-title' href={post.href} title={post.title}>{post.title}</Link>
+                        <Link className='story-title-big' href={post.href} title={post.title}>{post.title}</Link>
                       </h3>
                       <ul className="list-unstyled d-flex" style={{ lineHeight: '20px' }}>
                         <li className="custom_byline update-font" style={{fontSize:'12px'}}>By <Link className='update-font hover-link text-decoration-none' style={{fontSize:'12px'}} href={post.authorUrl}>{post.author}</Link></li>
