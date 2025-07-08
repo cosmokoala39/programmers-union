@@ -1,0 +1,30 @@
+{
+  "title": "Photo Galleries",
+  "link": "/photo-galleries",
+  "articles": [
+    {
+      "title": "Congress approves Trump’s tax-cut package",
+      "url": "https://www.staradvertiser.com/2025/07/03/photo-gallery/congress-approves-trumps-tax-cut-package/",
+      "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/2025-07-03T194945Z_1122412890_RC23FFA6XU2O_RTRMADP_3_USA-CONGRESS-TAX-300x200.jpg",
+      "date": "July 3, 2025"
+    },
+    {
+      "title": "House Republicans advance toward vote on Trump’s tax-cut bill",
+      "url": "https://www.staradvertiser.com/2025/07/02/photo-gallery/house-republicans-advance-toward-vote-on-trumps-tax-cut-bill/",
+      "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/2025-07-02T144620Z_289374893_RC2EEFAIIVBI_RTRMADP_3_USA-CONGRESS-TAX-300x206.jpg",
+      "date": "July 2, 2025"
+    },
+    {
+      "title": "California Gov. Gavin Newsom signs a bill supporting Hollywood",
+      "url": "https://www.staradvertiser.com/2025/07/02/photo-gallery/california-gov-gavin-newsom-signs-a-bill-supporting-hollywood/",
+      "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/2025-07-02T202407Z_2095414695_RC2IEFAL5WW6_RTRMADP_3_FILM-CALIFORNIA-300x200.jpg",
+      "date": "July 2, 2025"
+    },
+    {
+      "title": "U.S. House Rules Committee meets after Senate passes Trump’s spending, tax bill",
+      "url": "https://www.staradvertiser.com/2025/07/01/photo-gallery/u-s-house-rules-committee-meets-after-senate-passes-trumps-spending-tax-bill/",
+      "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/2025-07-01T211306Z_2087130365_RC2UDFA2O5SR_RTRMADP_3_USA-CONGRESS-TAX-300x200.jpg",
+      "date": "July 1, 2025"
+    }
+  ]
+}

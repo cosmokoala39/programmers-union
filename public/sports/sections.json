@@ -1,0 +1,10 @@
+[
+  { "title": "Latest Sports News", "href": "/category/sports/sports-breaking/", "external": false },
+  { "title": "Hawaii Beat", "href": "/category/sports/hawaii-beat/", "external": false },
+  { "title": "Hawaii Grown", "href": "/category/hawaii-grown/", "external": false },
+  { "title": "Scoreboard", "href": "/category/sports/scoreboard/", "external": false },
+  { "title": "TV & Radio", "href": "/category/sports/tv-radio/", "external": false },
+  { "title": "Sports News", "href": "/sports/", "external": false },
+  { "title": "Hawaii Prep World", "href": "https://www.hawaiiprepworld.com/", "external": true },
+  { "title": "Hawaii Warrior World", "href": "https://www.hawaiiwarriorworld.com", "external": true }
+]
