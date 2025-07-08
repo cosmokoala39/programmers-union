@@ -3,8 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { BiFontSize } from "react-icons/bi";
-// import "./LookingBack.css"; 
 
 export default function LookingBack() {
   return (

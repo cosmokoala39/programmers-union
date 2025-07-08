@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer(){
     return(
     <div>
@@ -5,7 +7,14 @@ export default function Footer(){
                   <div className="container py-5">
                       <div className="row">
                           <div className="col-12 col-lg-4 text-center text-lg-start mb-md-5 mb-lg-0">
-                              <img className="mb-4" src="https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/sa-logo-white-small.png" alt="Honolulu advertisement" width="164" height="35" loading="lazy" /> 
+                              <Image
+                                className="mb-4"
+                                src="https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/sa-logo-white-small.png"
+                                alt="Honolulu advertisement"
+                                width={164}
+                                height={35}
+                                loading="lazy"
+                              /> 
                               <p className="mb-4">
                                 500 Ala Moana Blvd. #2-200
                                 <br />

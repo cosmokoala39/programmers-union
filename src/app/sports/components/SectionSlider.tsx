@@ -1,11 +1,9 @@
 'use client';
 
-import { useEffect, useState } from 'react';
-import { Splide, SplideSlide,Splide as SplideInstance } from '@splidejs/react-splide';
-import '@splidejs/react-splide/css/core';
+import { useEffect, useRef, useState } from 'react';
 import styles from './SectionSlider.module.css';
 import { usePathname } from 'next/navigation';
-import { useRef } from'react';
+
 interface SectionItem {
   title: string;
   href: string;
@@ -13,11 +11,9 @@ interface SectionItem {
 }
 
 export default function SectionSlider() {
-    const splideRef = useRef<SplideInstance | null>(null);
-     const goPrev = () => splideRef.current?.go('<');
-  const goNext = () => splideRef.current?.go('>');
-  const [sections, setSections] = useState<SectionItem[]>([]);
+  const scrollRef = useRef<HTMLDivElement>(null);
   const pathname = usePathname();
+  const [sections, setSections] = useState<SectionItem[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -28,58 +24,50 @@ export default function SectionSlider() {
     fetchData();
   }, []);
 
+  const scrollLeft = () => {
+    if (scrollRef.current) scrollRef.current.scrollLeft -= 200;
+  };
+
+  const scrollRight = () => {
+    if (scrollRef.current) scrollRef.current.scrollLeft += 200;
+  };
+
   return (
     <div className="container mb-5">
-        <div className="topics-container position-relative">
-          
-                <div className="gradient-fade gradient-left" />
-                <div className="gradient-fade gradient-right" />
-             <div className="topics-carousel-wrapper">
-                <button onClick={goPrev} className="splide__arrow custom-arrow custom-arrow-left mx-2"><span><i className="fas fa-chevron-left"></i></span></button>
-                <div className={`${styles['section-slider-wrapper']}`}>
-                  <Splide
-                  ref={splideRef}
-                    options={{
-                         
-                      type: 'slide',
-                      perPage: 5,
-                      gap: '1px',
-                      arrows: false,
-                      pagination: false,
-                      drag: 'free',
-                      breakpoints: {
-                        1200: { perPage: 4 },
-                        768: { perPage: 2 },
-                      },
-                    }}
-                    aria-label="Section Page Menu"
+      <div className="topics-container position-relative">
+        <div className="gradient-fade gradient-left" />
+        <div className="gradient-fade gradient-right" />
+
+        <div className="topics-carousel-wrapper d-flex align-items-center">
+          <button onClick={scrollLeft} className="custom-arrow custom-arrow-left mx-2">
+            <span><i className="fas fa-chevron-left"></i></span>
+          </button>
+
+          <div className={`${styles['section-slider-wrapper']}`} ref={scrollRef}>
+            <div className={styles['scroll-inner']}>
+              <div className={`${styles['section-pill-sec']} fw-bold`}>Sections</div>
+              {sections.map((item, index) => {
+                const isActive = pathname === item.href;
+                return (
+                  <a
+                    key={index}
+                    href={item.href}
+                    target={item.external ? '_blank' : '_self'}
+                    rel={item.external ? 'noopener noreferrer' : ''}
+                    className={`${styles['section-pill']} ${isActive ? styles['active'] : ''}`}
                   >
-                    <SplideSlide>
-                      <span className={`${styles['section-pill-sec']} fw-bold `}>Sections</span>
-                    </SplideSlide>
-                
-                    {sections.map((item, index) => {
-                      const isActive = pathname === item.href;
-                      return (
-                        <SplideSlide key={index}>
-                          <a
-                            
-                            href={item.href}
-                            target={item.external ? '_blank' : '_self'}
-                            rel={item.external ? 'noopener noreferrer' : ''}
-                            className={`${styles['section-pill']} ${isActive ? styles['active'] : ''}  `}
-                          >
-                            {item.title}
-                          </a>
-                        </SplideSlide>
-                      );
-                    })}
-                  </Splide>
-                </div>
-                <button onClick={goNext}  className="splide__arrow custom-arrow custom-arrow-right mx-2"><span><i className="fas fa-chevron-right"></i></span></button>
-               </div>
-                </div>
-            </div> 
-    
+                    {item.title}
+                  </a>
+                );
+              })}
+            </div>
+          </div>
+
+          <button onClick={scrollRight} className="custom-arrow custom-arrow-right mx-2">
+            <span><i className="fas fa-chevron-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }

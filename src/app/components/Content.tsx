@@ -1,20 +1,26 @@
 'use client';
+
 import 'weather-icons/css/weather-icons.min.css';
-import { Splide, SplideSlide, SplideTrack, Splide as SplideInstance } from '@splidejs/react-splide';
-import '@splidejs/splide/dist/css/splide.min.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRef } from'react';
-
+import { useRef} from 'react';
 import '@/app/globals.css';
+
 const topics = [
   'Maui Wildfires', 'Red Hill', 'Jury awards $3.15M',
   'Trump cuts', 'Hawaii budget', 'Health', 'Crave', 'Kokua line','hawaii prep world'
 ];
+
 export default function Content () {
-   const splideRef = useRef<SplideInstance | null>(null);
-     const goPrev = () => splideRef.current?.go('<');
-  const goNext = () => splideRef.current?.go('>');
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -300 : 300,
+        behavior: 'smooth'
+      });
+    }
+  };
     return(
         <>
         <div className="masthead container my-3 mb-md-0">
@@ -90,7 +96,7 @@ export default function Content () {
                 </a>
               </span>
               <span>
-                <a className='text-black' href="https://printreplica.staradvertiser.com/"> Today's Paper</a>
+                <a className='text-black' href="https://printreplica.staradvertiser.com/"> Todays Paper</a>
               </span>
             </small>
           </p>
@@ -132,50 +138,29 @@ export default function Content () {
       <hr />
     </div>
 
-<div className="container my-3">
-<div className="topics-container position-relative">
-  <button onClick={goPrev} className="splide__arrow custom-arrow custom-arrow-left mx-2"><span><i className="fas fa-chevron-left"></i></span></button>
-<div className="topics-carousel-wrapper">
-<div className="gradient-fade gradient-left" />
-<div className="gradient-fade gradient-right" />
-  
-  
-  <div className="topics-carousel ">
-   <Splide
-          ref={splideRef}
-          hasTrack={false}
-          aria-label="Top Topics"
-          options={{
-            type: 'loop',
-            perPage: 5,
-            perMove: 1,
-            gap: '12px',
-            pagination: false,
-            arrows: false,
-            breakpoints: {
-              1200: { perPage: 4 },
-              992: { perPage: 3 },
-              768: { perPage: 2 },
-              576: { perPage: 1 },
-            },
-          }}
-        >
-      
-      <SplideTrack>
-        {topics.map((topic, index) => (
-          <SplideSlide key={index}>
-            <div className="topic-pill">{topic}</div>
-          </SplideSlide>
-        ))}
-      </SplideTrack>
-    </Splide>
-  </div>
-  
-</div>
-<button onClick={goNext}  className="splide__arrow custom-arrow custom-arrow-right mx-2"><span><i className="fas fa-chevron-right"></i></span></button>
-</div>
+      <div className="container my-3">
+        <div className="topics-container position-relative">
+          <button onClick={() => scroll('left')} className="splide__arrow custom-arrow custom-arrow-left mx-2">
+            <span><i className="fas fa-chevron-left"></i></span>
+          </button>
 
-</div>
+          <div className="topics-carousel-wrapper">
+            
+            <div className="gradient-fade gradient-left" />
+            <div className="gradient-fade gradient-right" />
+            <div className="topics-carousel d-flex gap-3 overflow-auto" ref={scrollRef}>
+              {topics.map((topic, index) => (
+                <div className="topic-pill flex-shrink-0" key={index}>{topic}</div>
+              ))}
+            </div>
+           
+          </div>
+               <button onClick={() => scroll('right')} className="splide__arrow custom-arrow custom-arrow-right mx-2">
+            <span><i className="fas fa-chevron-right"></i></span>
+          </button>
+          
+        </div>
+      </div>
  
     </>
     )

@@ -39,7 +39,7 @@ export default function WidgetSection({ title, url, items }: WidgetSectionProps)
           {item.image && (
             <div className="thumbnail">
               <Link href={item.url}>
-                {/* eslint-disable-next-line @next/next/no-img-element */}
+                
                 <Image
                     src={item.image}
                     alt={item.title}

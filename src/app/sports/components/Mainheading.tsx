@@ -75,7 +75,7 @@ export default function Mainheading(){
                 </a>
               </span>
               <span>
-                <a className='text-black' href="https://printreplica.staradvertiser.com/"> Today's Paper</a>
+                <a className='text-black' href="https://printreplica.staradvertiser.com/"> Todays Paper</a>
               </span>
             </small>
           </p>

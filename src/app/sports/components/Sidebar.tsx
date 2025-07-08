@@ -1,10 +1,10 @@
 import Script from 'next/script';
-import GoogleAdBox1 from './GoogleAd';
+
 import SubscriberFavorites from './SubscriberFavorites';
-import STNPlayer from "./STNPlayer";
+
 import MostRecentStories from './MostRecentStories';
 import OrigamiAd from './OrigamiAd';
-import GptAdBox3 from './GptAdBox3';
+
 import NewEvents from './NewEvents';
 import MidWeek from './MidWeek';
 import HotDealsIframe from '@/app/components/HotDealsIframe';
@@ -24,13 +24,13 @@ export default function Sidebar(){
         
                 <div className="sidebar col-12 col-lg-4 col-xl-3">
 
-                    <STNPlayer/>
-                    <GoogleAdBox1/>
+                    
+                  
                     <SubscriberFavorites/>
-                    <GoogleAdBox1/>
+                    
                      <MostRecentStories/>
                      <OrigamiAd/>
-                     <GptAdBox3/>
+                     
                      <NewEvents/>
                      <MidWeek/>
                      <div className='hotdeals'>

@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Navbar(){
-   const [isOpen, setIsOpen] = useState(false);
+   const [isOpen] = useState(false);
     return(
         <>
         {/* Main navbar with search and buttons - This will be sticky */}

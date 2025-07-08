@@ -41,9 +41,9 @@ export default function NewsletterSignup() {
       <div className="row">
         {/* Left Column */}
         <div className="col-12 col-md-6 mb-2 mb-md-0 text-center text-md-start">
-          <h6 className="fs-4 mt-0 mb-1"><strong>Don't miss out on what's happening!</strong></h6>
+          <h6 className="fs-4 mt-0 mb-1"><strong>Dont miss out on whats happening!</strong></h6>
           <p className="email-form-blurb m-0">
-            Stay in touch with breaking news, as it happens, conveniently in your email inbox. It's FREE!
+            Stay in touch with breaking news, as it happens, conveniently in your email inbox. Its FREE!
           </p>
         </div>
 
@@ -83,7 +83,7 @@ export default function NewsletterSignup() {
         {/* Terms & Privacy Notice */}
         <div className="col-12 mt-3">
           <small className="d-block text-muted lh-sm">
-            By clicking to sign up, you agree to Star-Advertiser's and Google's{' '}
+            By clicking to sign up, you agree to Star-Advertisers and Google{' '}
             <a href="https://www.staradvertiser.com/about/terms-of-service/" target="_blank" rel="noopener noreferrer">
               Terms of Service <span><i className="fa fa-square-arrow-up-right"></i></span>
             </a>{' '}

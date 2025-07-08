@@ -315,7 +315,7 @@ export default function News(){
                     rel="noopener noreferrer"
                     
                   >
-                    <strong>View Today's Paper</strong>
+                    <strong>View Todays Paper</strong>
                     <span className="visually-hidden">Opens in a new tab</span>
                   </a>
                   <small className="d-block my-2 lh-1">
