@@ -5,6 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Source_Serif_4 } from 'next/font/google';
+import Mainheading from "./sports/components/Mainheading";
 
 const sourceSerif = Source_Serif_4({
   subsets: ['latin'],
@@ -58,6 +59,7 @@ export default function RootLayout({
         </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Navbar/>
+            <Mainheading/>
         {children}
         <Footer/>     
       </body>

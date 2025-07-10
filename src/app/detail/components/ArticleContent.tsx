@@ -1,94 +1,34 @@
 'use client';
+import Image from "next/image";
+interface Article {
+  title: string;
+  shortdescription: string;
+  description: string;
+  image: string;
+  slug: string;
+}
 
+interface ArticleContentProps {
+  article: Article;
+}
 
-
-export default function ArticleContent() {
-  
-
-
-
-  
-
+export default function ArticleContent({ article }: ArticleContentProps) {
   return (
     <div id="article-content" className="post col-12 col-md-11 clearfix">
       {/* Paywall content */}
       <div className="hsa-paywall">
-        <p>
-          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
-          Road Monday evening, according to a departmental media alert.
-        </p>
-        <p>
-          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
-          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
-          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
-        </p>
-        <p>
-          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
-          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
-          unit at the incident.
-        </p>
-        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
-        <p>
-          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
-          damaged two properties. The cause of Sunday’s fire has not yet been released.
-        </p>
-        <p>
-          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
-          Road Monday evening, according to a departmental media alert.
-        </p>
-        <p>
-          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
-          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
-          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
-        </p>
-        <p>
-          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
-          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
-          unit at the incident.
-        </p>
-        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
-        <p>
-          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
-          damaged two properties. The cause of Sunday’s fire has not yet been released.
-        </p>
-        <p>
-          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
-          Road Monday evening, according to a departmental media alert.
-        </p>
-        <p>
-          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
-          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
-          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
-        </p>
-        <p>
-          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
-          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
-          unit at the incident.
-        </p>
-        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
-        <p>
-          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
-          damaged two properties. The cause of Sunday’s fire has not yet been released.
-        </p>
-        <p>
-          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
-          Road Monday evening, according to a departmental media alert.
-        </p>
-        <p>
-          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
-          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
-          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
-        </p>
-        <p>
-          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
-          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
-          unit at the incident.
-        </p>
-        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
-        <p>
-          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
-          damaged two properties. The cause of Sunday’s fire has not yet been released.
-        </p>
+        <h2>{article.title}</h2>
+        <p>{article.shortdescription}</p>
+        <div>{article.description}</div>
+        {/* Display the image from the article */}
+        <Image
+          src={article.image}
+          alt={article.title}
+          className="img-fluid"
+          layout="responsive" // or "intrinsic", depending on your layout needs
+          width={800} // replace with actual width
+          height={600} // replace with actual height
+        />
       </div>
 
       {/* Comments section */}
@@ -104,7 +44,6 @@ export default function ArticleContent() {
               data-bs-target="#collapseOne"
               aria-expanded="false"
               aria-controls="collapseOne"
-            
               style={{
                 background: '#e5f6ff',
                 color: '#29547b',

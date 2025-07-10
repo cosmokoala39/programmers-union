@@ -117,14 +117,15 @@ export default function Navbar(){
                         </li>
 
                         <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://www.staradvertiser.com/category/breaking-news/">Breaking News</a>
+                          <Link href='/business' className="nav-link text-white">
+                              Business
+                            </Link>
                         </li>
 
                         <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse">
-                            Hawaii News
-                            
-                          </a>
+                          <Link href='/sports' className="nav-link text-white">
+                              Health
+                            </Link>
                         </li>
                         <li className="nav-item mx-2 fw-bold">
                           
@@ -135,43 +136,22 @@ export default function Navbar(){
                         
                         </li>
                         <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse">
-                           Editorial
-                            
-                          </a>
+                          <Link href='/politics' className="nav-link text-white">
+                              Politics
+                            </Link>
                         </li>
                         <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse"
-                             target="_blank"
-                             rel="noopener noreferrer"
-                             data-bs-toggle="tooltip"
-                             data-bs-placement="auto"
-                             title="Opens a new tab"
-                          >
-                            Obituaries&nbsp;
-                            <span ><i className="fa fa-square-arrow-up-right" style={{fill:'white'}}></i></span>
-                            <span className="visually-hidden">Opens in a new tab</span>
-                          </a>
+                          <Link href='/science' className="nav-link text-white">
+                              Science
+                            </Link>
                         </li>
                         <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse">
-                            Crave
-                            
-                          </a>
+                          <Link href='/technology' className="nav-link text-white">
+                              Technology
+                            </Link>
                         </li>
                         
-                        <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse">
-                            Videos
-                            
-                          </a>
-                        </li>
-                        <li className="nav-item mx-2 fw-bold">
-                          <a className="nav-link text-white" href="https://hawaiiobituaries.com/us/obituaries/hawaiiobituaries/browse">
-                           Print Replica
-                            
-                          </a>
-                        </li>
+                        
                         
 
   

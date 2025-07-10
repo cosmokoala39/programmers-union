@@ -14,9 +14,9 @@ interface ArchiveItem {
 export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
   return (
     <div>
-      {items.map((item, idx) => (
+      {items.map((item) => (
         <article
-          key={idx}
+          key={item.href}
           className="news-story archive border-bottom pb-3 mb-3 clearfix row"
         >
           {/* Image column */}
