@@ -32,6 +32,63 @@ export default function ArticleContent() {
           A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
           damaged two properties. The cause of Sunday’s fire has not yet been released.
         </p>
+        <p>
+          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
+          Road Monday evening, according to a departmental media alert.
+        </p>
+        <p>
+          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
+          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
+          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
+        </p>
+        <p>
+          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
+          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
+          unit at the incident.
+        </p>
+        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
+        <p>
+          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
+          damaged two properties. The cause of Sunday’s fire has not yet been released.
+        </p>
+        <p>
+          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
+          Road Monday evening, according to a departmental media alert.
+        </p>
+        <p>
+          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
+          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
+          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
+        </p>
+        <p>
+          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
+          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
+          unit at the incident.
+        </p>
+        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
+        <p>
+          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
+          damaged two properties. The cause of Sunday’s fire has not yet been released.
+        </p>
+        <p>
+          Honolulu Fire Department crews are battling a wildfire in the vicinity of Lualualei Naval Road and Paakea
+          Road Monday evening, according to a departmental media alert.
+        </p>
+        <p>
+          HFD said at 8:28 p.m. that the fire was 80% contained on the Lualualei side and that the fire burned 75
+          acres. HFD said no homes are threatened at this time and that air operations have been suspended for the
+          night. HFD said crews will be at the scene for another two hours cleaning and reloading equipment.
+        </p>
+        <p>
+          Earlier, HFD said at around 5:18 p.m. that 19 units responded to the fire. In an update at around 7:38 p.m.
+          HFD said that there are 10 engines, four tankers, two HFD helicopters and one airport rescue fire fighting
+          unit at the incident.
+        </p>
+        <p>Monday evening’s fire is the second on Oahu’s leeward coast in the past 24 hours.</p>
+        <p>
+          A wildfire in Maili Sunday afternoon scorched 55 acres, killed a 94-year-old woman and a pitbull, and
+          damaged two properties. The cause of Sunday’s fire has not yet been released.
+        </p>
       </div>
 
       {/* Comments section */}
