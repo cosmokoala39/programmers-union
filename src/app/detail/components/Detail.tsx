@@ -114,7 +114,7 @@ export default function Detail() {
     const halfCards = [];
     if (ads[i]) {
       halfCards.push(
-        <div key={`half-${i}`} className="col-md-6">
+        <div key={`half-${i}`} className="col-12 col-md-6">
           <AdCard {...ads[i]} size="half" />
         </div>
       );
@@ -122,7 +122,7 @@ export default function Detail() {
     }
     if (ads[i]) {
       halfCards.push(
-        <div key={`half-${i}`} className="col-md-6">
+        <div key={`half-${i}`} className="col-12 col-md-6">
           <AdCard {...ads[i]} size="half" />
         </div>
       );
