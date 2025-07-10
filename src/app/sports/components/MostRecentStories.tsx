@@ -7,7 +7,7 @@ import Image from 'next/image';
 interface RecentStory {
   title: string;
   url: string;
-  image: string;
+  img: string;
   author: string;
   authorUrl: string;
   date: string;
@@ -38,7 +38,7 @@ export default function MostRecentStories() {
           <div className="thumbnail small me-3 mb-3" style={{ minWidth: '70px' }}>
             <a href={story.url} title={story.title}>
               <Image
-                src={story.image}
+                src={story.img}
                 alt={story.title}
                 width={70}
                 height={47}

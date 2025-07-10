@@ -47,7 +47,7 @@ const articles = [{
 const breakingNews = [
   {
     title: 'DOH responds to 300-gallon fuel leak at Joint Base Pearl Harbor-Hickam',
-    link: 'https://www.staradvertiser.com/2025/07/02/breaking-news/doh-responds-to-300-gallon-fuel-leak-at-joint-base-pearl-harbor-hickam/',
+    link: '/detail',
     time: '6:05 p.m.',
     image: 'https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_8988436.jpg',
   },

@@ -43,6 +43,7 @@ export default function RootLayout({
           crossOrigin="anonymous"
           referrerPolicy="no-referrer"
         />
+        
           {/* _document.tsx or layout.tsx */}
             <script
               type="text/javascript"
