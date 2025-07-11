@@ -2,6 +2,7 @@
 
 import { useRef, useState, useEffect } from 'react';
 import Calender from './Calender';
+import Link from 'next/link';
 
 
 type EventItem = {
@@ -52,7 +53,7 @@ export default function EventCarousel({ eventsUrl = '/articles/event.json' }: Pr
           <div className="gradient-fade gradient-right" />
           <div className="topics-carousel d-flex gap-3 overflow-auto" ref={scrollRef}>
             {events.map((event, index) => (
-              <a
+              <Link
                 key={index}
                 href={event.link}
                 target="_blank"
@@ -83,7 +84,7 @@ export default function EventCarousel({ eventsUrl = '/articles/event.json' }: Pr
                     <p className="card-font mb-0">{event.venue}</p>
                   </div>
                 </div>
-              </a>
+              </Link>
             ))}
           </div>
         </div>

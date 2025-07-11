@@ -152,7 +152,7 @@ export default function News(){
                             height: index === 0 ? '407px' : '63px'
                           }}
                         >
-                          <a
+                          <Link
                             href={article.url}
                             title={article.title}
                             target="_blank"
@@ -165,7 +165,7 @@ export default function News(){
                               className="d-block"
                               style={{ objectFit: 'cover' }}
                             />
-                          </a>
+                          </Link>
                         </div>
                         
                         {/* Content block */}
@@ -173,14 +173,14 @@ export default function News(){
                           // First article
                           <>
                             <h3 className="my-2 fw-bold text-dark" >
-                              <a
+                              <Link
                                 href={article.url}
                                 className="d-block text-decoration-none text-black"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
                                 {article.title}
-                              </a>
+                              </Link>
                             </h3>
                             {article.excerpt && (
                               <p className="excerpt mb-3">{article.excerpt}</p>
@@ -206,14 +206,14 @@ export default function News(){
                           // Other articles
                           <div className="flex-grow-1">
                             <h3 className="story-title mb-2 article-font" >
-                              <a
+                              <Link
                                 href={article.url}
                                 className="d-block text-decoration-none text-black"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
                                 {article.title}
-                              </a>
+                              </Link>
                             </h3>
                             {article.excerpt && (
                               <p className="excerpt mb-3">{article.excerpt}</p>
@@ -291,7 +291,7 @@ export default function News(){
                <div className="col-12 col-lg-4 col-xl-3 order-3">
                 {/* Today's Paper */}
                 <div className="todays-paper mb-5 clearfix "style={{fontFamily:'sans-serif'}}>
-                  <a
+                  <Link
                    className='no-underline text-dark d-block"'
                     href="https://gateway.staradvertiser.com"
                     title="View today's newspaper"
@@ -307,8 +307,8 @@ export default function News(){
                       unoptimized
                     />
                     <span className="visually-hidden">Opens in a new tab</span>
-                  </a>
-                  <a
+                  </Link>
+                  <Link
                     className="text-decoration-none text-dark d-block mt-2 lh-1 "
                     href="https://gateway.staradvertiser.com"
                     target="_blank"
@@ -317,11 +317,11 @@ export default function News(){
                   >
                     <strong>View Todays Paper</strong>
                     <span className="visually-hidden">Opens in a new tab</span>
-                  </a>
+                  </Link>
                   <small className="d-block my-2 lh-1">
                     Subscribe today to read the newspaper online.
                   </small>
-                  <a
+                  <Link
                     className="button-3"
                     href="https://gateway.staradvertiser.com"
                     target="_blank"
@@ -329,7 +329,7 @@ export default function News(){
                   >
                     Subscribe Now
                     <span className="visually-hidden">Opens in a new tab</span>
-                  </a>
+                  </Link>
                 </div>
 
                 {/* Ad Widget */}
@@ -388,14 +388,14 @@ export default function News(){
                         </div>
                         <div className="most-popular-heading my-auto">
                           <h3 className=" mb-0 my-3">
-                            <a
+                            <Link
                             className='story-title lh-1'
                               href={article.href}
                               target="_blank"
                               rel="noopener noreferrer"
                             >
                               {article.title}
-                            </a>
+                            </Link>
                           </h3>
                         </div>
                       </article>
@@ -418,7 +418,7 @@ export default function News(){
                   
                 {/* MidWeek Image */}
                 <div className="textwidget">
-                  <a
+                  <Link
                     title="Flip through MidWeek online"
                     href="https://midweek-hi.newsmemory.com/?editionStart=MidWeek"
                     target="_blank"
@@ -433,7 +433,7 @@ export default function News(){
                       unoptimized
                     />
                     <span className="visually-hidden">Opens in a new tab</span>
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

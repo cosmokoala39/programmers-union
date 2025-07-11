@@ -47,17 +47,17 @@ export default function Navbar(){
                       </Link>
                     </li>
                     <li className="nav-item mx-2">
-                      <a
+                      <Link
                         href="https://printreplica.staradvertiser.com"
                         className="nav-link"
                         title="Print Replica"
                       >
                         <span><i className="fa fa-newspaper" aria-hidden="true" style={{ color: 'white', fontSize: '22px' }}></i></span>
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                        <div className="mx-auto">
-                          <a
+                          <Link
                             href="https://www.staradvertiser.com/"
                             title="Honolulu Star-Advertiser"
                           >
@@ -68,7 +68,7 @@ export default function Navbar(){
                               height={35}
                               priority
                             />
-                          </a>
+                          </Link>
                         </div>
                   <ul className="navbar-nav topnav">
                     <li className="nav-item mx-2 d-flex align-items-center">
@@ -81,7 +81,7 @@ export default function Navbar(){
                     </li>
                       
                     <li className="nav-item mx-2 mt-1">
-                      <a
+                      <Link
                         className="button-3"
                         href="https://gateway.staradvertiser.com/index.html?flow_type=subscribe"
                         target="_blank"
@@ -90,16 +90,16 @@ export default function Navbar(){
                         Subscribe&nbsp;
                         <span><i className="fa fa-square-arrow-up-right"></i></span>
                         <span className="visually-hidden">Opens in a new tab</span>
-                      </a>
+                      </Link>
                     </li>
                       
                     <li className="nav-item mx-2 mt-1">
-                      <a
+                      <Link
                         className="button-2"
                         href="https://www.staradvertiser.com/user-access/"
                       >
                         Log In
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

@@ -1,5 +1,6 @@
 'use client';
 import Image from "next/image";
+import Link from "next/link";
 interface Article {
   title: string;
   shortdescription: string;
@@ -69,29 +70,29 @@ export default function ArticleContent({ article }: ArticleContentProps) {
                 <div id="comments-rules-container" className="p-4 text-secondary small">
                   <p className="mb-3">
                     By participating in online discussions you acknowledge that you have agreed to the{' '}
-                    <a href="https://www.staradvertiser.com/about/terms-of-service/" target="_blank">
+                    <Link href="https://www.staradvertiser.com/about/terms-of-service/" target="_blank">
                       Terms of Service
-                    </a>
+                    </Link>
                     . An insightful discussion of ideas and viewpoints is encouraged, but comments must be civil and
                     in good taste, with no personal attacks. If your comments are inappropriate, you may be banned
                     from posting. Report comments if you believe they do not follow our{' '}
-                    <a href="https://www.staradvertiser.com/comment-guidelines/" target="_blank">guidelines</a>.
+                    <Link href="https://www.staradvertiser.com/comment-guidelines/" target="_blank">guidelines</Link>.
                   </p>
                   <p>
                     Having trouble with comments?{' '}
-                    <a href="https://www.staradvertiser.com/comment-faqs/" target="_blank">Learn more here</a>.
+                    <Link href="https://www.staradvertiser.com/comment-faqs/" target="_blank">Learn more here</Link>.
                   </p>
                 </div>
 
                 <div id="comments-container" className="p-4">
                   <div className="satalk-login-link mb-4">
-                    <a
+                    <Link
                       className="btn btn-primary"
                       href="/user-access/?redirect_to=https%3A%2F%2Fwww.staradvertiser.com%2F2025%2F07%2F07%2Fbreaking-news%2Ffire-crews-battle-nanakuli-wildfire%2F"
                       target="_blank"
                     >
                       Please log in to comment
-                    </a>
+                    </Link>
                   </div>
 
                   <div id="coral_talk_1587959796"></div>

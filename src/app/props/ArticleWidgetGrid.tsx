@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 interface Article {
@@ -28,7 +29,7 @@ const ArticleWidgetGrid: React.FC<Props> = ({ data }) => {
         <div key={i} className={`col-12 col-md-6 col-lg-3 mb-5 mb-lg-0 ${i !== 0 ? 'border-start' : ''}`}>
           <div className="section-heading">
             <h2>
-              <a 
+              <Link
               className="subheading"
            style={{ color: hover ? 'black' : '#1562A7' }}
                 onMouseEnter={() => setHover(true)}
@@ -36,7 +37,7 @@ const ArticleWidgetGrid: React.FC<Props> = ({ data }) => {
               href={widget.url}>
                 {widget.title}
                 <span><i className="fa fa-chevron-right"></i></span>
-              </a>
+              </Link>
             </h2>
           </div>
 
@@ -47,7 +48,7 @@ const ArticleWidgetGrid: React.FC<Props> = ({ data }) => {
             >
               {item.image && (
                 <div className="thumbnail">
-                  <a href={item.url}>
+                  <Link href={item.url}>
                     <Image
                         src={item.image}
                         alt={item.title}
@@ -57,13 +58,13 @@ const ArticleWidgetGrid: React.FC<Props> = ({ data }) => {
                        style={{objectFit:'cover'}}
                         sizes="(max-width: 600px) 100vw, 600px"
                       />
-                  </a>
+                  </Link>
                 </div>
               )}
               <h3 className="story-title my-2 font">
-                <a className='story-title' href={item.url} title={item.title}>
+                <Link className='story-title' href={item.url} title={item.title}>
                   {item.title}
-                </a>
+                </Link>
               </h3>
               <ul className="byline list-unstyled">
                 <li className='update-font'>{item.date}</li>

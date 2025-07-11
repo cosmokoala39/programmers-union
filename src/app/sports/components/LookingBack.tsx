@@ -17,7 +17,7 @@ export default function LookingBack() {
 
       <article className="news-story">
         <div className="thumbnail mb-2">
-          <a
+          <Link
             href="https://www.newspapers.com/article/honolulu-star-advertiser-july-11-1991/174948472/"
             target="_blank"
             rel="noopener noreferrer"
@@ -30,11 +30,11 @@ export default function LookingBack() {
               className="img-fluid w-100 h-auto"
             />
             <span className="visually-hidden">Opens in a new tab</span>
-          </a>
+          </Link>
         </div>
 
         <div >
-          <a
+          <Link
           className="story-title font sidebar-text"
             href="https://www.newspapers.com/article/honolulu-star-advertiser-july-11-1991/174948472/"
             target="_blank"
@@ -46,7 +46,7 @@ export default function LookingBack() {
           >
             July 11, 1991: Hawaii gets a view of total solar eclipse
             <span className="visually-hidden">Opens in a new tab</span>
-          </a>
+          </Link>
         </div>
       </article>
     </div>

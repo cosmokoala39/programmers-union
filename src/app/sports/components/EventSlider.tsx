@@ -7,6 +7,7 @@ import { Navigation} from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import Link from 'next/link';
 
 type EventItem = {
   title: string;
@@ -37,7 +38,7 @@ export default function EventSwiper() {
       >
         {events.map((event, index) => (
           <SwiperSlide key={index}>
-            <a
+            <Link
               href={event.link}
               target="_blank"
               rel="noopener noreferrer"
@@ -77,7 +78,7 @@ export default function EventSwiper() {
                   {event.venue}
                 </div>
               </div>
-            </a>
+            </Link>
           </SwiperSlide>
         ))}
       </Swiper>

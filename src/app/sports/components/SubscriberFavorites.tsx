@@ -7,6 +7,7 @@ export type PopularArticle = {
   url: string;
 };
 
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 
@@ -49,9 +50,9 @@ export default function SubscriberFavorites() {
               style={{ marginTop: 'auto', marginBottom: 'auto' }}
             >
               <h3 style={{ fontSize: '1rem' }}>
-                <a   className="story-title font" href={article.url} target="_blank" rel="noopener noreferrer">
+                <Link   className="story-title font" href={article.url} target="_blank" rel="noopener noreferrer">
                   {article.title}
-                </a>
+                </Link>
               </h3>
             </div>
           </article>

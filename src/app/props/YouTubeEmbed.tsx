@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 
 type YouTubeEmbedProps = {
@@ -28,7 +29,7 @@ const YouTubeEmbed = ({
       {headingLink && headingText && (
         <div className="section-heading">
           <h2>
-            <a
+            <Link
                 style={{ color: hover ? 'black' : '#1562A7' }}
                 onMouseEnter={() => setHover(true)}
                  onMouseLeave={() => setHover(false)} 
@@ -40,7 +41,7 @@ const YouTubeEmbed = ({
             >
               {headingText} <span><i className="fas fa-chevron-right"></i></span>
               <span className="visually-hidden">Opens in a new tab</span>
-            </a>
+            </Link>
           </h2>
         </div>
       )}

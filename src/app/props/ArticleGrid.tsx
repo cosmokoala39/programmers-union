@@ -1,6 +1,7 @@
 'use client';
 
 import Image from 'next/image';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 interface Article {
@@ -30,13 +31,13 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
       <div className="col-12">
         <div className="section-heading">
           <h2>
-            <a href={data.link} className='subheading'
+            <Link href={data.link} className='subheading'
             style={{ color: hover ? 'black' : '#1562A7' }}
             onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)}
             >
               {data.title} <span><i className="fas fa-chevron-right"></i></span>
-            </a>
+            </Link>
           </h2>
         </div>
       </div>
@@ -44,7 +45,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
         <div key={index} className="col-12 col-md-6 col-lg-3 border-start">
           <article className="news-story mb-3 clearfix">
             <div className="thumbnail med d-none d-md-block">
-              <a href={article.url}>
+              <Link href={article.url}>
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -53,10 +54,10 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
                   className="w-100 d-block"
                   style={{ objectFit: 'cover' }}
                 />
-              </a>
+              </Link>
             </div>
             <h3 className="story-title my-2">
-              <a className='story-title font' href={article.url}>{article.title}</a>
+              <Link className='story-title font' href={article.url}>{article.title}</Link>
             </h3>
             <ul className="byline list-unstyled ">
               <li className='update-font'>{article.date}</li>

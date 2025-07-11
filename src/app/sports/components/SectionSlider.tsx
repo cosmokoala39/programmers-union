@@ -3,6 +3,7 @@
 import { useEffect, useRef, useState } from 'react';
 import styles from './SectionSlider.module.css';
 import { usePathname } from 'next/navigation';
+import Link from 'next/link';
 
 interface SectionItem {
   title: string;
@@ -49,7 +50,7 @@ export default function SectionSlider() {
               {sections.map((item, index) => {
                 const isActive = pathname === item.href;
                 return (
-                  <a
+                  <Link
                     key={index}
                     href={item.href}
                     target={item.external ? '_blank' : '_self'}
@@ -57,7 +58,7 @@ export default function SectionSlider() {
                     className={`${styles['section-pill']} ${isActive ? styles['active'] : ''}`}
                   >
                     {item.title}
-                  </a>
+                  </Link>
                 );
               })}
             </div>

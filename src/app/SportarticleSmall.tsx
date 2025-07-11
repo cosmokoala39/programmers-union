@@ -1,5 +1,6 @@
 'use client';
 import Image from 'next/image';
+import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 interface Article {
@@ -21,11 +22,11 @@ export default function SportarticleSmall () {
         <div className="col-12 col-lg-6 border-right">
                         <div className="section-heading">
                           <h2>
-                            <a href="/category/hawaii-news" className='text-decoration-none subheading' style={{ color: hover ? 'black' : '#1562A7' }}
+                            <Link href="/category/hawaii-news" className='text-decoration-none subheading' style={{ color: hover ? 'black' : '#1562A7' }}
                             onMouseEnter={() => setHover(true)}
                         onMouseLeave={() => setHover(false)}>
                               sports <span><i className="fas fa-chevron-right"></i></span>
-                            </a>
+                            </Link>
                           </h2>
                         </div>
                     
@@ -33,7 +34,7 @@ export default function SportarticleSmall () {
                           <article key={index} className="news-story pb-3 mb-3 clearfix border-bottom">
                             {article.image && (
                              <div className="thumbnail">
-                              <a href={article.url}>
+                              <Link href={article.url}>
                                 <Image
                                   src={article.image}
                                   alt={article.title}
@@ -43,11 +44,11 @@ export default function SportarticleSmall () {
                                   loading="lazy"
                                   style={{ objectFit: 'cover' }}
                                 />
-                              </a>
+                              </Link>
                             </div>
                             )}
                             <h3 className=" my-2">
-                              <a className='story-title' href={article.url}>{article.title}</a>
+                              <Link className='story-title' href={article.url}>{article.title}</Link>
                             </h3>
                             {article.updated && (
                               <ul className="byline list-unstyled">

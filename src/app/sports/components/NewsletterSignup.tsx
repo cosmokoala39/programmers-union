@@ -1,4 +1,5 @@
 'use client';
+import Link from 'next/link';
 import { useState } from 'react';
 
 export default function NewsletterSignup() {
@@ -84,13 +85,13 @@ export default function NewsletterSignup() {
         <div className="col-12 mt-3">
           <small className="d-block text-muted lh-sm">
             By clicking to sign up, you agree to Star-Advertisers and Google{' '}
-            <a href="https://www.staradvertiser.com/about/terms-of-service/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.staradvertiser.com/about/terms-of-service/" target="_blank" rel="noopener noreferrer">
               Terms of Service <span><i className="fa fa-square-arrow-up-right"></i></span>
-            </a>{' '}
+            </Link>{' '}
             and{' '}
-            <a href="https://www.staradvertiser.com/about/privacy-policy/" target="_blank" rel="noopener noreferrer">
+            <Link href="https://www.staradvertiser.com/about/privacy-policy/" target="_blank" rel="noopener noreferrer">
               Privacy Policy <span><i className="fa fa-square-arrow-up-right"></i></span>
-            </a>. This form is protected by reCAPTCHA.
+            </Link>. This form is protected by reCAPTCHA.
           </small>
         </div>
       </div>

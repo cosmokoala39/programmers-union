@@ -1,10 +1,11 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function MidWeek(){
     return(
         <div>
             <div className="textwidget">
-                              <a
+                              <Link
                                 title="Flip through MidWeek online"
                                 href="https://midweek-hi.newsmemory.com/?editionStart=MidWeek"
                                 target="_blank"
@@ -19,7 +20,7 @@ export default function MidWeek(){
                                   unoptimized
                                 />
                                 <span className="visually-hidden">Opens in a new tab</span>
-                              </a>
+                              </Link>
                             </div>
         </div>
     )

@@ -1,3 +1,4 @@
+import Link from "next/link";
 
 
 export default function EventWidgetHeader ()  {
@@ -6,7 +7,7 @@ export default function EventWidgetHeader ()  {
     <div className="header mb-3">
       <div className="header-name-wrapper">
         <div className="header-name section-heading d-flex justify-content-between align-items-center flex-wrap">
-          <a
+          <Link
             target="_top"
             rel="noopener noreferrer"
             href="https://www.staradvertiser.com/calendar/"
@@ -14,10 +15,10 @@ export default function EventWidgetHeader ()  {
            
           >
             Upcoming Events
-          </a>
+          </Link>
 
           <span className="d-flex gap-2">
-            <a
+            <Link
               className="text-decoration-none text-black  d-flex align-items-center gap-1"
               target="_blank"
               rel="noopener noreferrer"
@@ -26,9 +27,9 @@ export default function EventWidgetHeader ()  {
             >
               <i className="fa-regular fa-calendar"></i>
               <span className="all-events"> See All Events</span>
-            </a>
+            </Link>
 
-            <a
+            <Link
               className="text-decoration-none text-black d-flex align-items-center gap-1"
               target="_blank"
               rel="noopener noreferrer"
@@ -37,7 +38,7 @@ export default function EventWidgetHeader ()  {
             >
               <i className="fa fa-plus" />
               <span className="all-events">Add your event</span>
-            </a>
+            </Link>
           </span>
         </div>
       </div>

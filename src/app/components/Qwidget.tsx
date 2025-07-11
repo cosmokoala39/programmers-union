@@ -146,14 +146,14 @@ export default function Qwidget() {
     <div className="col-12 col-lg-4">
             <div className="native">
                 <div className="section-heading-green">
-                    <h2 ><a href="/partner-videos" 
+                    <h2 ><Link href="/partner-videos" 
                     title="See more Partner Videos" 
                     className='widget-heading-green'
                      style={{ color: hover ? 'black' : '#15a741' }}
                      onMouseEnter={() => setHover(true)}
                         onMouseLeave={() => setHover(false)} 
                      >
-                    From Our Partners</a></h2>
+                    From Our Partners</Link></h2>
                 </div>
             </div>
             <div className="mb-5">
@@ -162,7 +162,7 @@ export default function Qwidget() {
             <div className="mb-5">
              <div className="section-heading">
                <h2>
-                 <a
+                 <Link
                    href="https://www.staradvertiser.com/category/hawaii-news/kokua-line/"
                    className="text-decoration-none breaking-news-head"
                    style={{ color: hover ? 'black' : '#1562A7' }}
@@ -170,7 +170,7 @@ export default function Qwidget() {
                    onMouseLeave={() => setHover(false)} 
                  >
                    Kokua Line <span><i className="fas fa-chevron-right"></i></span>
-                 </a>
+                 </Link>
                </h2>
              </div>
 
@@ -180,14 +180,14 @@ export default function Qwidget() {
                  className="news-story border-bottom pb-2 mb-2 clearfix"
                >
                  <h3 className="story-title h6 mb-0">
-                   <a
+                   <Link
                      href={article.href}
                      title={article.title}
                      className="text-dark text-decoration-none font"
                      style={{fontSize:'18px',fontWeight:'550'}}
                    >
                      {article.title}
-                   </a>
+                   </Link>
                  </h3>
                </article>
              ))}

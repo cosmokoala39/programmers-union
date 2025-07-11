@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import EventSwiper from "./EventSlider"
 import React, { useEffect, useState } from "react";
 
@@ -28,7 +29,7 @@ export default function EventList() {
       <div className="event-scroll">
         <EventSwiper/>
         {events.slice(0, 10).map((event, index) => (
-          <a
+          <Link
             key={index}
             href={event.url}
             target="_blank"
@@ -45,7 +46,7 @@ export default function EventList() {
               <div className="event-title story-title">{event.title}</div>
               <div className="event-venue">{event.venue}</div>
             </div>
-          </a>
+          </Link>
         ))}
       </div>
 

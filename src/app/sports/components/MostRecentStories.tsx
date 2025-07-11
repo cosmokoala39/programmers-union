@@ -4,6 +4,7 @@
 import { useEffect, useState } from 'react';
 
 import Image from 'next/image';
+import Link from 'next/link';
 interface RecentStory {
   title: string;
   url: string;
@@ -36,7 +37,7 @@ export default function MostRecentStories() {
           className="news-story border-bottom pb-2 mb-3 clearfix d-flex"
         >
           <div className="thumbnail small me-3 mb-3" style={{ minWidth: '70px' }}>
-            <a href={story.url} title={story.title}>
+            <Link href={story.url} title={story.title}>
               <Image
                 src={story.img}
                 alt={story.title}
@@ -44,13 +45,13 @@ export default function MostRecentStories() {
                 height={47}
                 style={{ objectFit: 'cover' }}
               />
-            </a>
+            </Link>
           </div>
           <div>
             <h3 className=" mb-2" style={{ fontSize: '1rem' }}>
-              <a className="story-title font" href={story.url} title={story.title}>
+              <Link className="story-title font" href={story.url} title={story.title}>
                 {story.title}
-              </a>
+              </Link>
             </h3>
           </div>
         </article>

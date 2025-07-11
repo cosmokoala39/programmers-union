@@ -67,15 +67,15 @@ export default function Mainheading(){
             <small className="d-flex justify-content-around">
               <span>Tuesday, July 1, 2025</span>
               <span>
-                <a className="text-decoration-none" href="https://www.staradvertiser.com/hawaii-weather">
+                <Link className="text-decoration-none" href="https://www.staradvertiser.com/hawaii-weather">
                   <i className="wi wi-night-clear h6"></i>
                   <span className='text-black'>
                   &nbsp;77°
                   </span>
-                </a>
+                </Link>
               </span>
               <span>
-                <a className='text-black' href="https://printreplica.staradvertiser.com/"> Todays Paper</a>
+                <Link className='text-black' href="https://printreplica.staradvertiser.com/"> Todays Paper</Link>
               </span>
             </small>
           </p>
