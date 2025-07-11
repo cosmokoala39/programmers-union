@@ -1,5 +1,7 @@
+"use client"
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 interface ArchiveItem {
   title: string;
@@ -9,10 +11,19 @@ interface ArchiveItem {
   updated: string;
   author?: string;
   excerpt?: string;
-  slug?:string;
+  slug?: string;
 }
 
-export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
+export default function ArchiveList() {
+  const [items, setItems] = useState<ArchiveItem[]>([]);
+
+  useEffect(() => {
+    fetch('/sports/archievelist.json')
+      .then((res) => res.json())
+      .then((data) => setItems(data))
+      .catch((error) => console.error('Error loading articles:', error));
+  }, []);
+
   return (
     <div>
       {items.map((item) => (
@@ -20,7 +31,6 @@ export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
           key={item.title}
           className="news-story archive border-bottom pb-3 mb-3 clearfix row"
         >
-          {/* Image column */}
           <div className="col-12 col-md-4 mb-3 mb-md-0">
             <Link href={item.href} title={item.title}>
               <Image
@@ -34,7 +44,6 @@ export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
             </Link>
           </div>
 
-          {/* Text content column */}
           <div className="col-12 col-md-8">
             <h3 className="my-2">
               <Link className="story-title font" href={item.href} title={item.title}>

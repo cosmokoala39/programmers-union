@@ -1,6 +1,6 @@
-{
-    "main":[
+[
                 {
+                  "id":1,
                   "category":"sports",
                   "title":"Cooper Flagg: The Most Compelling NBA Prospect Since LeBron?",
         "description":"Cooper Flagg is one of the NBA's most intriguing prospects of the last 15 years. Born in Newport, Maine, and raised in the small town of Newcastle, Flagg isn’t just another high-upside athlete—he’s already drawing comparisons to NBA legends for his IQ, motor, defensive prowess, and feel for the game. At 6’9” with a 7-foot wingspan, Flagg can guard every position and is considered the most compelling NBA prospect since LeBron James. His journey began early, making NBA radars by his freshman year of high school, transferring to Montverde Academy, and reclassifying to the 2024 class. Unlike many top prospects, Flagg pairs athleticism with high basketball IQ, showcasing elite anticipation, vision, and poise. His weakside shot-blocking and help defense have drawn comparisons to Andrei Kirilenko and Draymond Green—only taller and more offensively skilled. Offensively, Flagg is a smooth ball-handler, sharp passer, and improving shooter. He doesn’t force plays, instead making mature reads and demonstrating court vision and patience rare for his age. Defensively, he’s elite—averaging over 5 blocks per game and quarterbacking defenses like an NBA anchor. His switchability allows him to guard any position, making him a prototype for today’s NBA. Flagg draws comparisons to Kevin Garnett for intensity, Larry Bird for intelligence, and LeBron James for versatility, though none fully capture his unique blend of traits. His only real unknown is how he’ll fare against pro competition. His commitment to Duke is both symbolic and strategic—joining a legacy of NBA talent under Coach Jon Scheyer, who’s building a pro-style system. Flagg will be Duke’s centerpiece, and his ability to handle pressure will be tested. Yet, his maturity and readiness suggest he’ll thrive. Beyond his game, Flagg is part of a new generation of media-savvy, hyper-skilled players. He balances fame with humility, credits teammates and coaches, and displays a relentless work ethic. Scouts praise his film study, skill refinement, and unselfish play. With the 2025 NBA Draft looming, Flagg is projected to go No. 1 overall. His fit in any modern NBA system—from Golden State’s movement offense to Miami’s defensive intensity—is seamless. What separates Flagg is that his hype is built on substance. While highlights show his dunks and blocks, the real magic lies in his winning plays—rotations, passes, hustle, and effort. These are the plays that make stars into champions. The pressure on Flagg will be immense, but he appears to welcome it. Arriving at a time when the NBA craves two-way, high-IQ, positionless players, Flagg isn’t just a fit—he’s the blueprint. If he stays healthy and develops as expected, Cooper Flagg could define the next era of basketball. Keep watching—this is what generational talent looks like.",
@@ -10,11 +10,14 @@
           "authorUrl": "/author/phonda",
           "date": "Today",
           "updated": "12:16 a.m.",
-          "excerpt": "When Cameron Porter sat patiently on the bench as a freshman on Punahou’s state-championship team of 2023, it was Evan who predicted greatness and goodness for his younger brother."
+          "shortdescription": "When Cameron Porter sat patiently on the bench as a freshman on Punahou’s state-championship team of 2023, it was Evan who predicted greatness and goodness for his younger brother.",
+           "breakingnews":true,
+           "headline":true
         }
-    ],
-    "next":[
+   ,
+    
           {
+            "id":2,
             "category":"sports",
        "title":"NBA Star James Harden Named in Negligence Lawsuit Linked to Sexual Assault Allegations Against Nephew",
         "description":"NBA player James Harden is facing a civil lawsuit accusing him of negligence in connection with an alleged sexual assault involving his nephew at a party hosted at Harden's California home in August 2023. The plaintiff, identified as Jane Doe, alleges that Harden failed to provide adequate security, monitor guests, or ensure a safe environment, which she claims contributed to the assault. While Harden is not accused of directly participating in the assault, the lawsuit argues he was negligent as the host. The incident reportedly occurred during a private gathering featuring alcohol, music, and many attendees. Jane Doe claims Harden's nephew assaulted her after she became intoxicated, and that Harden knew of his nephew's past behavior but took no precautions. Legal experts suggest the case will hinge on whether Harden can be held liable as a host for failing to prevent foreseeable harm. The lawsuit names both Harden and his nephew as co-defendants but remains a civil case with no criminal charges against Harden at this time. Harden’s legal team has not filed a response, though sources suggest he will deny responsibility and seek dismissal. The case raises broader questions about the responsibility of high-profile individuals in hosting private events and the legal obligations they may have. While Harden has no history of similar incidents and is mostly known for his basketball career, the association with such a case could impact his reputation, endorsements, and public image. The plaintiff seeks unspecified damages for emotional distress, trauma, and suffering, citing claims of negligence, negligent supervision, premises liability, and emotional distress. The outcome will likely depend on testimony, video evidence, and whether Harden had prior knowledge of risks. There is no confirmed criminal investigation at this time, though that could change depending on new developments. Harden has not commented publicly, following typical legal advice, and public reaction has been mixed—some calling for caution, others expressing concern. The case emphasizes the legal risks celebrities face and may set a precedent for future civil actions involving alleged misconduct at private events.",
@@ -24,10 +27,11 @@
     "authorUrl": "/author/dreardon",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
+    "shortdescription": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
     "comments": 2
   },
   {
+    "id":3,
     "category":"sports",
           "title":"PFT’s 2025 NFL Post-Minicamp Power Rankings: Chiefs, 49ers Remain on Top as Contenders Emerge",
         "description":"Pro Football Talk (PFT) has released its much-anticipated 2025 NFL post-minicamp power rankings, offering fans, analysts, and insiders a comprehensive view of the league’s landscape following a busy offseason and the latest round of minicamps. Leading the way are the defending Super Bowl champion Kansas City Chiefs, thanks to Patrick Mahomes, a retooled wide receiver group, and a dominant defense led by Steve Spagnuolo. The San Francisco 49ers follow closely with elite talent like Fred Warner, Nick Bosa, Christian McCaffrey, and Brock Purdy. The Baltimore Ravens are No. 3, showcasing Lamar Jackson’s continued evolution and a stronger defense. At No. 4, the Detroit Lions continue their surge with Jared Goff, Jahmyr Gibbs, Amon-Ra St. Brown, and a now-imposing defense. The Buffalo Bills round out the top five despite Stefon Diggs’ departure, with Josh Allen leading a restructured offense. At No. 6, the Houston Texans rise rapidly behind C.J. Stroud’s development, new weapon Stefon Diggs, and a fierce defense. The Philadelphia Eagles drop to No. 7 due to aging defensive concerns but still boast Jalen Hurts and an elite offensive cast. Ranked No. 8, the Cincinnati Bengals look to rebound with a healthy Joe Burrow and enhanced pass rush. The Dallas Cowboys are No. 9, led by Dak Prescott in a contract year and a defense fueled by Micah Parsons. Rounding out the top 10 are the Green Bay Packers, with Jordan Love’s emergence and an aggressive defense putting them in NFC title contention. At No. 11, the Miami Dolphins remain explosive with Tua Tagovailoa, Tyreek Hill, and Jaylen Waddle but face defensive and injury concerns. The Cleveland Browns sit at No. 12, with Deshaun Watson still a wild card despite a strong roster. The New York Jets claim No. 13 as Aaron Rodgers returns behind a revamped offensive line, supported by Sauce Gardner and a top-tier defense. The Los Angeles Rams are No. 14, relying on Matthew Stafford and Puka Nacua while navigating depth issues. At No. 15, the Chicago Bears spotlight rookie QB Caleb Williams, who will lead a talented offense with D.J. Moore, Keenan Allen, and Rome Odunze. No. 16 sees the Atlanta Falcons aiming for the playoffs with Kirk Cousins and a solid core. The Indianapolis Colts, ranked 17th, are an under-the-radar team with a healthy Anthony Richardson and star RB Jonathan Taylor. At No. 18, the Seattle Seahawks begin a new era under a fresh coaching staff, with questions around Geno Smith’s long-term role. The Minnesota Vikings rank 19th as they enter a transitional phase with J.J. McCarthy and Sam Darnold at quarterback. The Pittsburgh Steelers sit at No. 20, counting on Russell Wilson or Justin Fields to stabilize a struggling offense. The Tampa Bay Buccaneers are 21st, still led by Baker Mayfield, Mike Evans, and Chris Godwin, though their defense is aging. The Las Vegas Raiders follow at No. 22, with uncertainty at quarterback but a strong defensive presence from Maxx Crosby. At No. 23, the New Orleans Saints remain stuck in inconsistency under Derek Carr and cap limitations. The Denver Broncos come in at 24th with rookie QB Bo Nix and Sean Payton’s long-term rebuild plan. Ranked 25th, the Washington Commanders start fresh with Jayden Daniels and head coach Dan Quinn, focusing on youth development. The Tennessee Titans are No. 26, with Will Levis trying to prove himself behind a reshaped offense including Calvin Ridley. The Arizona Cardinals are No. 27, hoping for a full year of Kyler Murray and big plays from rookie Marvin Harrison Jr. The New England Patriots (No. 28) are in full rebuild mode with rookie Drake Maye leading an undermanned offense. At No. 29, the Carolina Panthers hope Bryce Young can take a leap with new weapons but expectations remain low. The New York Giants rank 30th amid concerns about Daniel Jones’ future and a quiet offseason. The Los Angeles Chargers are surprisingly ranked 31st as Jim Harbaugh’s rebuild begins with Justin Herbert but lacking proven weapons. Finally, the New England Patriots appear again at No. 32 in what seems to be a typographical error, but it underscores the deep rebuild facing the franchise. Overall, PFT’s rankings reflect a league of continuity at the top and flux throughout, driven by emerging talent, quarterback changes, and shifting expectations.",
@@ -37,138 +41,7 @@
     "authorUrl": "/author/stsai",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
+    "shortdescription": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
     "comments": 42
   }
-
-    ],
-    "archive":[
-  {
-    "title": "Television and radio – July 6, 2025",
-    "href": "/2025/07/06/sports/tv-radio/television-and-radio-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1-1-600x376.jpg",
-    "date": "Today",
-    "updated": "9:33 p.m."
-  },
-  {
-    "title": "Scoreboard – July 6, 2025",
-    "href": "/2025/07/06/sports/scoreboard/scoreboard-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-    "date": "Today",
-    "updated": "8:44 p.m."
-},
-  {
-    "title": "Joey Chestnut wins 17th title, eats 71 hot dogs to reclaim crown",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/sports-breaking/joey-chestnut-wins-17th-title-eats-71-hot-dogs-to-reclaim-crown/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_20250704_brk_jch01.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Maiya Keidan / Reuters",
-    "excerpt":"Chestnut, 41, of Indiana, ate 71 hot dogs in 10 minutes, landing him the “Mustard Belt” prize for the most dogs consumed"
-  },
-
-    {
-         
-    "title": "Former Hawaii quarterback dealing with serious health issue",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/former-hawaii-quarterback-dealing-with-serious-health-issue/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-SCRIMMAGE-10.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Stephen Tsai",
-    "excerpt":"Former University of Hawaii football teammates and coaches are rooting for Brent Rausch’s recovery from an intestinal problem that has caused a nearly 60-pound weight loss."
-  
-    },
-    {
-        "title":"Television and radio – July 4, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/scoreboard-july-4-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 4, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"UH swimmers, divers earn scholar status",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/hawaii-beat/uh-swimmers-divers-earn-scholar-status/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_10-c5-Erin-McNulty-1.jpg",
-        "date":"July 4, 2025",
-       
-        "author":"Star-Advertiser staff",
-        "excerpt":"The Hawaii women’s swimming and diving team was named to the College Swimming and Diving Coaches Association of America Scholar All-America team for the Spring 2025 semester on Thursday"
-
-    }
-    ,
-    {
-        "title":"UH baseball boosts pitching staff with Washington transfer",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/uh-baseball-boosts-pitching-staff-with-washington-transfer/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-UH-Baseball-007.jpg",
-        "date":"July 3, 2025 ",
-        
-        "author":"Stephen Tsai",
-        "excerpt":"The University of Hawaii baseball team strengthened its pitching staff with the addition of a hard-throwing transfer from the University of Washington."
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/television-and-radio-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1.jpg",
-        "date":"July 3, 2025"
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/scoreboard-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 3, 2025"
-    }
-    ,
-    {
-        "title":"Kozuma, Ota claim Pro-Pro Championship",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/hawaii-beat/kozuma-ota-claim-pro-pro-championship/",
-        "date":"July 2, 2025",
-        "author":"Star-Advertiser staff",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-manoa-cup-13350.jpg"
-        
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 2, 2025",
-        "href":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 2, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/scoreboard-july-2-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"MPI’s Look wins Gatorade award for track",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/hawaii-beat/mpis-look-wins-gatorade-award-for-track/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-PREP-329-copy-v.jpg",
-        "date":" July 1, 2025",
-        "updated":"",
-        "author":"Star-Advertiser staff",
-        "excerpt":"Destiny Look of Mid-Pacific was named Gatorade’s Track & Field Player of the Year for Hawaii on Monday. "
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 1, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/scoreboard-july-1-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 1, 2025"
-    }
 ]
-
-}

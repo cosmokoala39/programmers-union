@@ -8,15 +8,7 @@ import LoadMoreSection from '../sports/components/LoadMoreSeccion';
 import Sidebar from '../sports/components/Sidebar';
 import ArchiveList from '../sports/components/ArchiveList';
 
-interface ArchiveItem {
-  title: string;
-  href: string;
-  image: string;
-  date: string;
-  updated: string;
-  author?: string;
-  excerpt?: string;
-}
+
 
 
 
@@ -43,20 +35,22 @@ export default async function CategoryPage({ params }: PageProps) {
   async function getData(): Promise<{
     mainPost: Post | null;
     nextPosts: Post[];
-    archiveList: ArchiveItem[];
+    
   } | null> {
     try {
       const res = await fetch(`${BASE_URL}/data/${category}.json`, { cache: 'no-store' });
 
       if (!res.ok) return null;
 
-      const json = await res.json();
+      const posts: Post[] = await res.json();
 
-      return {
-        mainPost: json.main?.[0] || null,
-        nextPosts: json.next || [],
-        archiveList: json.archive || []
-      };
+       const mainPost = posts.find(post => post.id === 1) || null;
+    const nextPosts = posts.filter(post => post.id === 2 || post.id === 3);
+
+    return {
+      mainPost,
+      nextPosts,
+    };
     } catch (err) {
       console.error('Error fetching merged JSON:', err);
       return null;
@@ -82,7 +76,7 @@ export default async function CategoryPage({ params }: PageProps) {
         <div className="row lg-margin">
           <div className="col-12 col-lg-8 col-xl-9 mb-5 mb-lg-0 border-end">
             <SubscribeBanner />
-            <ArchiveList items={data.archiveList} />
+            <ArchiveList  />
             <LoadMoreSection />
           </div>
           <Sidebar />

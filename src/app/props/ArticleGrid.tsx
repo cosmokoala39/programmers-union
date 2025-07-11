@@ -9,6 +9,7 @@ interface Article {
   image: string;
   url: string;
   date: string;
+  slug:string;
 }
 
 interface ArticleGridProps {

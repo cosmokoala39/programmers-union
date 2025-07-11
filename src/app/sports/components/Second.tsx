@@ -1,6 +1,6 @@
 import LoadMoreSection from './LoadMoreSeccion';
 import NewsletterSignup from './NewsletterSignup';
-import Scoreboard2 from './Scoreboard2';
+
 import Sidebar from './Sidebar';
 import SubscribeBanner from "./SubscribeBanner";
 
@@ -14,7 +14,7 @@ export default function Second(){
                     <SubscribeBanner/>
                     
                     <NewsletterSignup/>
-                    <Scoreboard2/>
+                    
                     <LoadMoreSection/>
                     
                 </div>

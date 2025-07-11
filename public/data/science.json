@@ -1,175 +1,63 @@
-{
-    "main":[
-                {
+[
+    {
+        "id":1,
                   "category":"science",
           "title":"Mailed Self-Sample Kits Significantly Boost Cervical Cancer Screening Rates, Study Finds",
           "author": "Paul Honda",
           "authorUrl": "/author/phonda",
           "date": "Today",
           "updated": "12:16 a.m.",
-          "excerpt": "When Cameron Porter sat patiently on the bench as a freshman on Punahou’s state-championship team of 2023, it was Evan who predicted greatness and goodness for his younger brother.",
+          "shortdescription": "When Cameron Porter sat patiently on the bench as a freshman on Punahou’s state-championship team of 2023, it was Evan who predicted greatness and goodness for his younger brother.",
           "description":"A recent groundbreaking study has revealed that mailing HPV self-sampling kits to women substantially increases cervical cancer screening rates, offering an effective and accessible approach to address long-standing gaps in preventive healthcare, particularly among underserved and hard-to-reach populations. Conducted by public health experts and published in a respected medical journal, the study targeted women overdue for cervical cancer screening who faced barriers to attending in-person appointments. Participants who received mailed kits were significantly more likely to complete screening than those who only got standard reminders. These kits included easy-to-follow instructions and all necessary materials for at-home vaginal sample collection, which were then returned to labs for high-risk HPV testing—critical for early detection. Completion rates nearly doubled or tripled among women receiving kits, especially in lower-income, rural, and minority communities. Experts hailed this as a major public health advancement, emphasizing the potential for mailed self-sampling to address healthcare inequities, reduce strain on clinics, and improve early cancer detection. Many participants found the process comfortable and preferable to clinic visits, citing privacy and convenience. The intervention is scalable and cost-effective, with health advocates pushing for integration into national screening programs. While follow-up care remains essential, self-sampling is a vital entry point into the healthcare system, especially for those traditionally left out. The study also stresses the need for community outreach, culturally sensitive education, and reliable follow-up to ensure timely care for those who test positive. With cervical cancer still claiming tens of thousands of lives globally, despite being largely preventable, this approach aligns with WHO's elimination goals. Pilot programs in various regions are already showing success, and healthcare agencies are evaluating how to scale distribution in low-resource settings. Additionally, the findings suggest a broader future for at-home testing in preventive care, including for colorectal cancer and STIs. As the COVID-19 pandemic revealed vulnerabilities in traditional care models, self-testing options are gaining momentum. The study marks a hopeful shift in public health strategy—blending innovation, access, and empowerment to save lives through early detection.",
         "image":"/images/mailed-self-sample-kits-boost-cervical-cancer-screening.webp",
-        "slug":"mailed-self-sample-kits-boost-cervical-cancer-screening"  
-
+        "slug":"mailed-self-sample-kits-boost-cervical-cancer-screening" , 
+          "breakingnews":true
         }
-    ],
-    "next":[
+    ,
+    
           {
+            "id":2,
             "category":"science",
         "title":"Genetically Modified Bacteria Convert Plastic Waste Into Valuable Pain Relievers",
     "author": "Dave Reardon",
     "authorUrl": "/author/dreardon",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
+    "shortdescription": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
    "description":"In a remarkable breakthrough blending biotechnology, environmental science, and pharmaceutical innovation, researchers have successfully engineered genetically modified bacteria capable of breaking down plastic waste and converting it into salicylic acid, the active ingredient in aspirin. Focusing on PET plastics commonly found in bottles and packaging, the team used enzymes to depolymerize the plastic into terephthalic acid, which was then metabolized by genetically modified E. coli through a multi-step pathway to produce salicylic acid. The result was a pharmaceutical-grade product matching industry standards, offering a sustainable alternative to traditional, petrochemical-heavy production. This innovation not only addresses the plastic pollution crisis but also creates a low-carbon path to medicine manufacturing. Experts have lauded the development as a key step in circular economy practices, turning waste into value while reducing industrial emissions. The technique, still in the lab phase, is being optimized for yield and scalability, with plans for pilot programs and mobile bioconversion units in high-waste or low-resource areas. The approach could revolutionize how we deal with both environmental waste and pharmaceutical supply, with future applications potentially expanding into producing other medicines, biofuels, or chemicals. Regulatory agencies have shown interest, and early public response has been positive, though researchers acknowledge the need for thorough biosafety and ethical evaluations. As plastic production surpasses 400 million tons annually and climate pressures demand greener industrial processes, this breakthrough exemplifies how synthetic biology can transform global sustainability efforts by converting pollution into life-saving solutions.",
         "image":"/images/modified-bacteria-convert-plastic-into-pain-reliever.webp",
         "slug":"modified-bacteria-convert-plastic-into-pain-reliever"
- 
+
   },
   {
+    "id":3,
     "category":"science",
         "title":"Japanese Company Attributes Second Moon Crash to Faulty Laser Altimeter",
     "author": "Stephen Tsai",
     "authorUrl": "/author/stsai",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
+    "shortdescription": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
 "description":"In a major setback for Japan’s private space ambitions, a Tokyo-based aerospace startup has confirmed that its second attempt to land a spacecraft on the Moon failed due to a critical malfunction in its laser altimeter system. The failure occurred when the laser-based sensor misread the spacecraft’s altitude, causing a miscalculated descent and a high-speed impact instead of a soft landing. The same company had previously failed a 2023 landing attempt, and despite hardware and software upgrades, this second crash raises concerns over their engineering reliability. The mission was carrying customer payloads and international instruments, all of which were lost. Analysts warn that repeated descent-related issues could damage investor confidence, though such failures are not uncommon in early lunar exploration. The crash underscores the complexity of soft lunar landings, which demand precise altitude sensing and flawless integration of multiple subsystems under extreme conditions. While Japan’s national space agency JAXA expressed support for continued private efforts, the incident adds to global concerns about the rapid commercialization of lunar missions. The company has pledged a thorough investigation and announced work on a next-generation lander with improved sensors and redundant systems to avoid single-point failures. Despite reputational damage, the firm remains committed to developing regular lunar delivery services and a sustainable Moon economy. Industry observers compare the trajectory to early SpaceX failures, emphasizing that persistence and learning are key in space exploration. The company now faces pressure to regain trust from investors, regulators, and payload customers, while reaffirming Japan’s broader goal of playing a leading role in the new era of commercial lunar activity.",
         "image":"/images/japanese-moon-landing-failure-laser-altimeter-issue.webp",
         "slug":"japanese-moon-landing-failure-laser-altimeter-issue"
 
+
   }
 
-    ],
-    "archive":[
-  {
-    "title": "Television and radio – July 6, 2025",
-    "href": "/2025/07/06/sports/tv-radio/television-and-radio-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1-1-600x376.jpg",
-    "date": "Today",
-    "updated": "9:33 p.m."
-  },
-  {
-    "title": "Scoreboard – July 6, 2025",
-    "href": "/2025/07/06/sports/scoreboard/scoreboard-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-    "date": "Today",
-    "updated": "8:44 p.m."
-},
-  {
-    "title": "Joey Chestnut wins 17th title, eats 71 hot dogs to reclaim crown",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/sports-breaking/joey-chestnut-wins-17th-title-eats-71-hot-dogs-to-reclaim-crown/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_20250704_brk_jch01.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Maiya Keidan / Reuters",
-    "excerpt":"Chestnut, 41, of Indiana, ate 71 hot dogs in 10 minutes, landing him the “Mustard Belt” prize for the most dogs consumed"
-  },
-
-    {
-         
-    "title": "Former Hawaii quarterback dealing with serious health issue",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/former-hawaii-quarterback-dealing-with-serious-health-issue/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-SCRIMMAGE-10.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Stephen Tsai",
-    "excerpt":"Former University of Hawaii football teammates and coaches are rooting for Brent Rausch’s recovery from an intestinal problem that has caused a nearly 60-pound weight loss."
-  
-    },
-    {
-        "title":"Television and radio – July 4, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/scoreboard-july-4-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 4, 2025"
-        
-
-    }
     ,
-    {
-        "title":"UH swimmers, divers earn scholar status",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/hawaii-beat/uh-swimmers-divers-earn-scholar-status/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_10-c5-Erin-McNulty-1.jpg",
-        "date":"July 4, 2025",
-       
-        "author":"Star-Advertiser staff",
-        "excerpt":"The Hawaii women’s swimming and diving team was named to the College Swimming and Diving Coaches Association of America Scholar All-America team for the Spring 2025 semester on Thursday"
-
-    }
-    ,
-    {
-        "title":"UH baseball boosts pitching staff with Washington transfer",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/uh-baseball-boosts-pitching-staff-with-washington-transfer/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-UH-Baseball-007.jpg",
-        "date":"July 3, 2025 ",
-        
-        "author":"Stephen Tsai",
-        "excerpt":"The University of Hawaii baseball team strengthened its pitching staff with the addition of a hard-throwing transfer from the University of Washington."
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/television-and-radio-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1.jpg",
-        "date":"July 3, 2025"
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/scoreboard-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 3, 2025"
-    }
-    ,
-    {
-        "title":"Kozuma, Ota claim Pro-Pro Championship",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/hawaii-beat/kozuma-ota-claim-pro-pro-championship/",
-        "date":"July 2, 2025",
-        "author":"Star-Advertiser staff",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-manoa-cup-13350.jpg"
-        
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 2, 2025",
-        "href":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 2, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/scoreboard-july-2-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"MPI’s Look wins Gatorade award for track",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/hawaii-beat/mpis-look-wins-gatorade-award-for-track/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-PREP-329-copy-v.jpg",
-        "date":" July 1, 2025",
-        "updated":"",
-        "author":"Star-Advertiser staff",
-        "excerpt":"Destiny Look of Mid-Pacific was named Gatorade’s Track & Field Player of the Year for Hawaii on Monday. "
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 1, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/scoreboard-july-1-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 1, 2025"
-    }
+    
+        {
+        "id":4,
+        "date": "Today",
+        "updated": "9:33 p.m.",
+        "category":"science",
+        "title":"Early-Season Heat Dome Scorches Eastern US With Record-Breaking Temperatures",
+        "shortdescription":"An unusually early and intense heat dome has blanketed the Eastern United States, pushing temperatures to their highest levels in years and triggering health warnings, power demand surges, and wildfire concerns.",
+        "description":"An early-season heat dome has gripped the Eastern U.S., pushing temperatures to record-breaking highs and triggering widespread heat advisories, public health warnings, and power grid stress across major cities like New York, Washington D.C., Boston, and Chicago. The phenomenon, caused by a stagnant high-pressure system trapping hot air, has impacted over 100 million people with triple-digit temperatures and dangerously high heat indices. Emergency rooms are reporting spikes in heat-related illnesses, while school closures, cooling centers, and energy conservation efforts are underway. Urban areas face heightened risks due to the heat island effect, and rural regions are seeing agricultural stress and livestock exposure. Meteorologists link the early formation and severity of the heat dome to a mix of warming ocean temperatures, atmospheric stagnation, and climate change. Wildfire risks and poor air quality have risen sharply in parts of the Northeast, prompting burn bans and respiratory health warnings. Infrastructure is also strained, with transportation delays and power grid vulnerabilities exposed. Officials urge precautions like staying indoors, hydrating, and checking on vulnerable neighbors. The economic toll is expected to be high, encompassing healthcare, energy use, lost labor productivity, and agricultural loss. Experts stress that such extreme heat events are becoming more common and call for climate-adaptive infrastructure, sustainable energy policies, and urban planning reforms. Relief may be slow to arrive, with forecasts projecting continued high temperatures and drought conditions into July. This heat dome serves as both a climate warning and a call for collective preparedness, compassion, and resilience.",
+        "image":"/images/early-heat-dome-record-temperatures-eastern-us.webp",
+        "slug":"early-heat-dome-record-temperatures-eastern-us",
+        "headline":true
+ 
+  }
 ]
-
-}

@@ -4,9 +4,10 @@ import Image from 'next/image';
 import Link from 'next/link';
 
 export type Post = {
+  id:number;
   title: string;
-  slug: string;            // Required slug
-  category: string;        // Required category
+  slug: string;            
+  category: string;        
   image: string;
   author: string;
   authorUrl?: string;

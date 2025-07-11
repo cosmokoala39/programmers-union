@@ -1,6 +1,7 @@
-{
-    "main":[
-                {
+[
+
+ {
+            "id":1,
                   "category":"health",
           "title":"Study Reveals Addictive Use—Not Screen Time Alone—Is the Real Threat to Youth Mental Health",
                  "image":"/images/addictive-use-not-screen-time-harms-youth-mental-health.webp",
@@ -10,166 +11,37 @@
           "description":"A comprehensive new study has shifted the conversation around youth mental health and digital technology, revealing that the true threat to young people's well-being stems not from overall screen time, but from the addictive and compulsive nature of digital habits. Conducted across multiple countries, the research found no consistent link between time spent online and poor mental health; instead, problematic usage—characterized by loss of control, withdrawal symptoms, and interference with daily life—correlated strongly with anxiety, depression, and sleep issues. Compulsive behaviors like endless scrolling, reflexive app checking, and prioritizing digital over real-life interactions created feedback loops of overstimulation, social comparison, and emotional distress. Social media platforms with algorithmic feeds and addictive features were especially harmful, particularly to vulnerable teens from lower-income families or those with pre-existing mental health issues. The study warns against over-monitoring screen time and advocates for mindful, purpose-driven digital use, supported by education on digital literacy, emotional regulation, and app design awareness. Experts call for policies focusing on tech hygiene, collaborative parent-teen conversations, mental health access, and tech reform to reduce manipulative engagement strategies. While digital tools can offer connection and creativity, the study emphasizes intentional use and system-level change, reframing the issue from a screen-time problem to one of behavioral addiction and systemic design. The findings have major implications for public health, parenting, and education, and arrive as global youth mental health faces critical challenges amid pandemic aftershocks and social pressures. The solution, researchers stress, lies in awareness, empathy, and balanced engagement—not blanket bans.",
 
           "updated": "12:16 a.m.",
-          "excerpt": "New research shows that it’s not just the amount of screen time that affects young people's mental health, but how compulsively they use digital devices, with addictive behaviors linked to anxiety, depression, and poor sleep.",
-          "slug":"addictive-use-not-screen-time-harms-youth-mental-health" 
-
-        }
-    ],
-    "next":[
+          "shortdescription": "New research shows that it’s not just the amount of screen time that affects young people's mental health, but how compulsively they use digital devices, with addictive behaviors linked to anxiety, depression, and poor sleep.",
+          "slug":"addictive-use-not-screen-time-harms-youth-mental-health" ,
+                  "breakingnews":true
+        },
+    
+   
           {
+            "id":2,
             "category":"health",
     "title":"Why a Top Vaccine Expert Resigned from the CDC: ‘Americans Are Going to Die’",
        "author": "Dave Reardon",
     "authorUrl": "/author/dreardon",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
+    "shortdescription": "The Chace Numata Senior All-Star Classic drew more than 600, including some scouts, to Les Murakami Stadium. The game showcased the talents of nearly 50 standouts from schools statewide.",
     "description":"In a striking and emotional resignation, Dr. Amanda Cohn, a leading vaccine expert at the CDC, has stepped down, citing bureaucratic inertia, political interference, and delayed decision-making as threats to American lives. Her statement—'Americans are going to die'—reflects deep frustration over the CDC's failure to act swiftly on vaccine approvals for COVID-19, RSV, and flu, despite clear scientific evidence and FDA clearance. Cohn, who served over two decades and led numerous immunization initiatives, warned that fear of backlash and political optics have paralyzed decision-making, leaving vulnerable populations at risk. Her resignation sheds light on growing dysfunction within the CDC, where scientific consensus is often overridden by cautious leadership unwilling to provoke controversy. Former colleagues describe her departure as a major loss, emphasizing her role in vaccine access for underserved communities and during the pandemic. The incident reignites debate over the politicization of public health, with critics urging structural reforms to protect scientific integrity, speed up vaccine deployment, and rebuild public trust. Cohn’s call for courage and clarity within the CDC resonates amid rising vaccine hesitancy, declining immunization rates, and increasing infectious disease threats. Without changes, she warns, preventable suffering will become normalized through administrative failure. Her exit, praised but unaddressed by the CDC, leaves a sobering reminder that lives are on the line when public health institutions are compromised.",
     "image":"/images/cdc-vaccine-expert-resigns-americans-going-to-die.webp",
-    "slug":"cdc-vaccine-expert-resigns-americans-going-to-die.webp"
-
+    "slug":"cdc-vaccine-expert-resigns-americans-going-to-die.webp",
+    "headline":true
   },
   {
+    "id":3,
     "category":"health",
     "title":"Measles Outbreaks in Canada and Mexico Signal Alarming Global Resurgence",
     "authorUrl": "/author/stsai",
     "date": "Today",
     "updated": "12:14 a.m.",
-    "excerpt": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
+    "shortdescription": "In a rat-a-tat first week as the University of Hawaii’s athletic director, Matt Elliott met with staff, coaches, athletes and boosters; analyzed reports and data, and acted on day-to-day matters.",
     "description":"A concerning surge in measles outbreaks across Canada and Mexico has raised alarm among public health authorities, who warn that weakening vaccination coverage and containment failures threaten decades of progress in disease elimination. Once near-eliminated in both countries, measles is now reemerging in multiple regions—Ontario and British Columbia in Canada, and Mexico City and border states in Mexico—largely fueled by international travel, under-vaccinated communities, and disruptions in routine immunizations during the COVID-19 pandemic. Canadian outbreaks trace back to unvaccinated travelers entering areas with declining MMR (measles-mumps-rubella) vaccine uptake, while Mexico faces compounded challenges including healthcare inequities, limited vaccine access, and strained surveillance systems. The World Health Organization and Pan American Health Organization are urging immediate mass immunization campaigns and reinforced containment strategies, as measles—one of the most contagious viruses—can spread rapidly among unvaccinated populations. Hospitals are seeing a rise in severe complications, including encephalitis and pneumonia, particularly among children under five and marginalized groups. Health officials emphasize that the two-dose MMR vaccine is 97% effective and critical for preventing outbreaks. Response strategies now include mobile vaccination clinics, targeted outreach, school-based catch-up campaigns, and combatting online misinformation. Experts warn that unless urgent, coordinated efforts are made, the Americas could face a rollback in public health achievements, with rising economic, social, and health burdens. The outbreaks also serve as a cautionary tale for countries like the United States, where vaccination hesitancy is rising. Ultimately, the resurgence of measles underscores the fragile nature of global health gains and the need for sustained vaccine equity, public trust, and government commitment to immunization as a cornerstone of disease prevention.",
     "image":"/images/measles-outbreaks-canada-mexico-grim-prognosis.webp",
     "slug":"measles-outbreaks-canada-mexico-grim-prognosis"
 
   }
-
-    ],
-    "archive":[
-  {
-    "title": "Television and radio – July 6, 2025",
-    "href": "/2025/07/06/sports/tv-radio/television-and-radio-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1-1-600x376.jpg",
-    "date": "Today",
-    "updated": "9:33 p.m."
-  },
-  {
-    "title": "Scoreboard – July 6, 2025",
-    "href": "/2025/07/06/sports/scoreboard/scoreboard-july-6-2025/",
-    "image": "https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-    "date": "Today",
-    "updated": "8:44 p.m."
-},
-  {
-    "title": "Joey Chestnut wins 17th title, eats 71 hot dogs to reclaim crown",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/sports-breaking/joey-chestnut-wins-17th-title-eats-71-hot-dogs-to-reclaim-crown/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_20250704_brk_jch01.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Maiya Keidan / Reuters",
-    "excerpt":"Chestnut, 41, of Indiana, ate 71 hot dogs in 10 minutes, landing him the “Mustard Belt” prize for the most dogs consumed"
-  },
-
-    {
-         
-    "title": "Former Hawaii quarterback dealing with serious health issue",
-    "href": "https://www.staradvertiser.com/2025/07/04/sports/former-hawaii-quarterback-dealing-with-serious-health-issue/",
-    "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-SCRIMMAGE-10.jpg",
-    "date": "Today",
-    "updated": "July 4, 2025",
-    "author":" Stephen Tsai",
-    "excerpt":"Former University of Hawaii football teammates and coaches are rooting for Brent Rausch’s recovery from an intestinal problem that has caused a nearly 60-pound weight loss."
-  
-    },
-    {
-        "title":"Television and radio – July 4, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/scoreboard-july-4-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 4, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"UH swimmers, divers earn scholar status",
-        "href":"https://www.staradvertiser.com/2025/07/04/sports/hawaii-beat/uh-swimmers-divers-earn-scholar-status/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_10-c5-Erin-McNulty-1.jpg",
-        "date":"July 4, 2025",
-       
-        "author":"Star-Advertiser staff",
-        "excerpt":"The Hawaii women’s swimming and diving team was named to the College Swimming and Diving Coaches Association of America Scholar All-America team for the Spring 2025 semester on Thursday"
-
-    }
-    ,
-    {
-        "title":"UH baseball boosts pitching staff with Washington transfer",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/uh-baseball-boosts-pitching-staff-with-washington-transfer/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-UH-Baseball-007.jpg",
-        "date":"July 3, 2025 ",
-        
-        "author":"Stephen Tsai",
-        "excerpt":"The University of Hawaii baseball team strengthened its pitching staff with the addition of a hard-throwing transfer from the University of Washington."
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/television-and-radio-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2019/09/TV-and-Radio-promos2-1.jpg",
-        "date":"July 3, 2025"
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 3, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/03/sports/scoreboard-july-3-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 3, 2025"
-    }
-    ,
-    {
-        "title":"Kozuma, Ota claim Pro-Pro Championship",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/hawaii-beat/kozuma-ota-claim-pro-pro-championship/",
-        "date":"July 2, 2025",
-        "author":"Star-Advertiser staff",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-manoa-cup-13350.jpg"
-        
-
-    }
-    ,
-    {
-        "title":"Television and radio – July 2, 2025",
-        "href":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2020/08/TV-and-Radio-promos.jpg",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 2, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/02/sports/scoreboard-july-2-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 2, 2025"
-        
-
-    }
-    ,
-    {
-        "title":"MPI’s Look wins Gatorade award for track",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/hawaii-beat/mpis-look-wins-gatorade-award-for-track/",
-        "image":"https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_SPT-PREP-329-copy-v.jpg",
-        "date":" July 1, 2025",
-        "updated":"",
-        "author":"Star-Advertiser staff",
-        "excerpt":"Destiny Look of Mid-Pacific was named Gatorade’s Track & Field Player of the Year for Hawaii on Monday. "
-
-    }
-    ,
-    {
-        "title":"Scoreboard – July 1, 2025",
-        "href":"https://www.staradvertiser.com/2025/07/01/sports/scoreboard-july-1-2025/",
-        "image":"https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/thumbnail-default.gif",
-        "date":"July 1, 2025"
-    }
-]
-
-}
+  ]
