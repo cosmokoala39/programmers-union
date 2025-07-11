@@ -3,8 +3,8 @@ import Image from "next/image";
 import Link from "next/link";
 interface Article {
   title: string;
-  shortdescription: string;
   description: string;
+  excerpt: string;
   image: string;
   slug: string;
 }
@@ -19,8 +19,7 @@ export default function ArticleContent({ article }: ArticleContentProps) {
       {/* Paywall content */}
       <div className="hsa-paywall">
         <h2>{article.title}</h2>
-        <p>{article.shortdescription}</p>
-        <div>{article.description}</div>
+       
         {/* Display the image from the article */}
         <Image
           src={article.image}
@@ -30,8 +29,10 @@ export default function ArticleContent({ article }: ArticleContentProps) {
           width={800} // replace with actual width
           height={600} // replace with actual height
         />
+         
       </div>
-
+      <p>{article.excerpt}</p>
+      <div>{article.description}</div>
       {/* Comments section */}
       <span id="section-before-comments"></span>
       <div className="comments-wrapper my-5 clearfix">

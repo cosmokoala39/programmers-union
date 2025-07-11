@@ -1,4 +1,4 @@
-import Header from "../../sports/components/Header";
+
 
 import Detail from "../../detail/components/Detail";
 import SubscriberFavorites from "../../sports/components/SubscriberFavorites";
@@ -37,7 +37,7 @@ export default async function Page({ params }: { params: Promise<{ category: str
       <div className="container my-5">
         <div className="row">
           <div className="post-entry-wrapper col-12 col-lg-8 col-xl-8 mb-5 mb-lg-0">
-            <Header />
+            
             <div className="row">
               <ShareToolbar />
               <ArticleContent article={article} />

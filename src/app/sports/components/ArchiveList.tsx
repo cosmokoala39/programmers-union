@@ -9,6 +9,7 @@ interface ArchiveItem {
   updated: string;
   author?: string;
   excerpt?: string;
+  slug?:string;
 }
 
 export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
@@ -16,7 +17,7 @@ export default function ArchiveList({ items }: { items: ArchiveItem[] }) {
     <div>
       {items.map((item) => (
         <article
-          key={item.href}
+          key={item.title}
           className="news-story archive border-bottom pb-3 mb-3 clearfix row"
         >
           {/* Image column */}
