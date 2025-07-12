@@ -1,5 +1,5 @@
 'use client';
-import Image from 'next/image';
+// import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -32,7 +32,7 @@ export default function Navbar() {
           </button>
 
           {/* Logo: always visible in navbar (mobile and desktop) */}
-          <div className="mx-auto mx-lg-0 my-2 my-lg-0 d-flex align-items-center" style={{ minWidth: 164 }}>
+          {/* <div className="mx-auto mx-lg-0 my-2 my-lg-0 d-flex align-items-center" style={{ minWidth: 164 }}>
             <Link href="https://www.staradvertiser.com/" title="Honolulu Star-Advertiser" className="d-block">
               <Image
                 src="https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/sa-logo-white-small.png"
@@ -42,7 +42,7 @@ export default function Navbar() {
                 priority
               />
             </Link>
-          </div>
+          </div> */}
 
           {/* Collapsible menu */}
           <div

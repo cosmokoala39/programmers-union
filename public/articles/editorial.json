@@ -1,30 +1,26 @@
 {
   "title": "Editorial",
-  "link": "https://www.staradvertiser.com/category/editorial/",
+  "link": "#",
   "articles": [
     {
       "title": "Letter: Cooperation is key in managing tourism",
       "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_20250704-oped-waikiki-300x196.jpg",
-      "url": "https://www.staradvertiser.com/2025/07/04/editorial/letters/letter-cooperation-is-key-in-managing-tourism/",
-      "date": "Today"
+"url": "#",      "date": "Today"
     },
     {
       "title": "Editorial cartoon for Friday, July 4, 2025",
       "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_7-4-Independence-Day-toon-300x209.jpg",
-      "url": "https://www.staradvertiser.com/2025/07/04/editorial/editorial-cartoons/editorial-cartoon-for-friday-july-4-2025/",
-      "date": "Today"
+"url": "#",      "date": "Today"
     },
     {
       "title": "Editorial: Don’t lose sight of democratic values",
       "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_ALBUM_4thJulyFlag-300x225.jpeg",
-      "url": "https://www.staradvertiser.com/2025/07/04/editorial/our-view/editorial-dont-lose-sight-of-democratic-values/",
-      "date": "Today"
+"url": "#",      "date": "Today"
     },
     {
       "title": "Off the news: Chef aide awarded $3.15M after abuse",
       "image": "https://www.staradvertiser.com/wp-content/uploads/2025/07/web1_20250529-a1-money-promo-300x100.jpg",
-      "url": "https://www.staradvertiser.com/2025/07/04/editorial/off-the-news/off-the-news-chef-aide-awarded-3-15m-after-abuse/",
-      "date": "Today"
+"url": "#",      "date": "Today"
     }
   ]
 }

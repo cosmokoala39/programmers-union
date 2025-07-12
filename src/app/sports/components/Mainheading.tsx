@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import Link from "next/link"
 export default function Mainheading(){
     return(
@@ -40,32 +40,14 @@ export default function Mainheading(){
         
         <div className="d-none d-md-block col-6 col-lg-4 mx-auto text-lg-center pt-1">
           <div>
-            <Link href="https://www.staradvertiser.com">
-              <Image
-                className="w-100"
-                src="https://sa-media.s3.us-east-1.amazonaws.com/images/sa-logo.svg"
-                alt="Honolulu Star-Advertiser"
-                title="Honolulu Star-Advertiser"
-                width={416}
-                height={88.75}
-              />
-            </Link>
-            <h1 style={{
-              border: 0,
-              clip: 'rect(0 0 0 0)',
-              height: '1px',
-              margin: '-1px',
-              overflow: 'hidden',
-              padding: 0,
-              position: 'absolute',
-              width: '1px'
-            }}>
-              Honolulu Star-Advertiser
-            </h1>
+            
+              <h1 className="text-dark text-decoration-none">MELONPOST</h1>
+           
+            
           </div>
           <p className="mt-2">
             <small className="d-flex justify-content-around">
-              <span>Tuesday, July 1, 2025</span>
+              <span>saturday, July 12, 2025</span>
               <span>
                 <Link className="text-decoration-none" href="https://www.staradvertiser.com/hawaii-weather">
                   <i className="wi wi-night-clear h6"></i>
@@ -75,7 +57,7 @@ export default function Mainheading(){
                 </Link>
               </span>
               <span>
-                <Link className='text-black' href="https://printreplica.staradvertiser.com/"> Todays Paper</Link>
+                <Link className='text-black' href="#"> Todays Paper</Link>
               </span>
             </small>
           </p>
