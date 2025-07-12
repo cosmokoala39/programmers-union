@@ -108,7 +108,7 @@ export default function Qwidget() {
           </h3>
 
           <Link
-            href="https://gateway.staradvertiser.com/index.html"
+            href="#"
             target="_blank"
             className="button px-4 py-2 py-md-3 rounded-5"
             data-ab-beacon-test-id="1"
@@ -163,7 +163,7 @@ export default function Qwidget() {
              <div className="section-heading">
                <h2>
                  <Link
-                   href="https://www.staradvertiser.com/category/hawaii-news/kokua-line/"
+                   href="#"
                    className="text-decoration-none breaking-news-head"
                    style={{ color: hover ? 'black' : '#1562A7' }}
                    onMouseEnter={() => setHover(true)}

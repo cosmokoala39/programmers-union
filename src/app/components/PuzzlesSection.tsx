@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 const puzzles = [
   {
-    href: 'https://www.staradvertiser.com/puzzles/?puzzleType=sheffer',
+    href: '#',
     image: 'https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/crossword.gif',
     alt: 'Crossword',
     title: 'Eugene Scheffer Crossword',
@@ -13,7 +13,7 @@ const puzzles = [
       'A daily puzzle known for its clever wordplay and balanced difficulty, for both novice and experienced solvers.',
   },
   {
-    href: 'https://www.staradvertiser.com/puzzles/?puzzleType=wg_guesstionary',
+    href: '#',
     image: 'https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/guesstionary_bigger.gif',
     alt: 'Guesstionary',
     title: 'Guesstionary',
@@ -21,7 +21,7 @@ const puzzles = [
       'Decode the word in 6 daily tries. Green for right letters in place, yellow for right letters in wrong place, and gray for outliers.',
   },
   {
-    href: 'https://www.staradvertiser.com/puzzles/?puzzleType=sud_classic_king',
+    href: '#',
     image: 'https://www.staradvertiser.com/wp-content/themes/hsa-redesign/images/sudoku_white.gif',
     alt: 'Sudoku',
     title: 'Classic Sudoku',
@@ -31,10 +31,10 @@ const puzzles = [
 ];
 
 const links = [
-  { href: 'https://www.staradvertiser.com/puzzles/', label: 'Puzzles' },
-  { href: 'https://www.staradvertiser.com/comics/', label: 'Comics' },
-  { href: 'https://www.staradvertiser.com/comics?ckpage=political', label: 'Political Cartoons' },
-  { href: 'https://www.staradvertiser.com/comics?ckpage=horoscopes', label: 'Horoscopes' },
+  { href: '#', label: 'Puzzles' },
+  { href: '#', label: 'Comics' },
+  { href: '#', label: 'Political Cartoons' },
+  { href: '#', label: 'Horoscopes' },
 ];
 
 const PuzzlesSection = () => {

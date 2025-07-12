@@ -5,8 +5,8 @@ import path from "path";
 import Detail from "../../detail/components/Detail";
 import SubscriberFavorites from "../../sports/components/SubscriberFavorites";
 import OrigamiAd from "../../sports/components/OrigamiAd";
-import LookingBack from "../../sports/components/LookingBack";
-import MidWeek from "../../sports/components/MidWeek";
+
+
 import MostRecentStories from "../../sports/components/MostRecentStories";
 
 import ArticleContent from "@/app/detail/components/ArticleContent";
@@ -26,6 +26,28 @@ interface Article {
   slug: string;
  
 }
+
+
+export async function generateStaticParams() {
+  const dataDir = path.join(process.cwd(), 'public', 'data');
+
+  const files = await fs.readdir(dataDir);
+  const params: { category: string; slug: string }[] = [];
+
+  for (const file of files) {
+    const category = file.replace('.json', '');
+    const filePath = path.join(dataDir, file);
+    const fileContent = await fs.readFile(filePath, 'utf-8');
+    const articles = JSON.parse(fileContent);
+
+    for (const article of articles) {
+      params.push({ category, slug: article.slug });
+    }
+  }
+
+  return params;
+}
+
 
 export default async function Page({
   params,
@@ -61,13 +83,11 @@ const isClientSlug = category==="politics" && slug === "puerto-ricos-former-gove
             <div className="mx-2 px-2 me-2">
               <OrigamiAd />
               <SubscriberFavorites />
-              <OrigamiAd />
+              
               <MostRecentStories />
-              <OrigamiAd />
-              <MidWeek />
-              <OrigamiAd />
-              <LookingBack />
-              <OrigamiAd />
+              
+              
+              
             </div>
           </div>
         </div>

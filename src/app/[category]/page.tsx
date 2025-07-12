@@ -3,7 +3,7 @@ import Header from '../sports/components/Header';
 import SectionSlider from '../sports/components/SectionSlider';
 
 import { notFound } from 'next/navigation';
-import SubscribeBanner from '../sports/components/SubscribeBanner';
+
 import LoadMoreSection from '../sports/components/LoadMoreSeccion';
 import Sidebar from '../sports/components/Sidebar';
 import ArchiveList from '../sports/components/ArchiveList';
@@ -75,7 +75,7 @@ export default async function CategoryPage({ params }: PageProps) {
       <div className="container mb-5">
         <div className="row lg-margin">
           <div className="col-12 col-lg-8 col-xl-9 mb-5 mb-lg-0 border-end">
-            <SubscribeBanner />
+            
             <ArchiveList  />
             <LoadMoreSection />
           </div>
