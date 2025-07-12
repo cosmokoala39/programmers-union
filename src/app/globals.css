@@ -230,10 +230,10 @@ position: fixed;
 }
 .story-title{
   text-decoration: none;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1em;
   color: #0a0a0a;
-  font-weight: 400;
+  font-weight: 500;
 }
 .hover-link:hover{
   color: #0a0a0a;
@@ -550,4 +550,8 @@ color:gray;
   font-size: 30px;
   text-decoration: none;
   color: #29547b;
+}
+.last-update{
+  font-size: 14px;
+  font-family: sans-serif;
 }

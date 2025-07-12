@@ -1,67 +1,75 @@
+// components/NewsCategoryGrid.tsx
+
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
 
 type Article = {
+  id: number;
+  category: string;
   title: string;
-  url: string;
+  slug?: string;
   image?: string;
   date: string;
 };
 
 type WidgetSectionProps = {
-  title: string;
-  url: string;
-  items: Article[];
+  data: Record<string, Article[]>;
+  categories: string[];
 };
 
-export default function WidgetSection({ title, url, items }: WidgetSectionProps) {
-    const [hover,setHover]=useState(false)
+export default function WidgetSection({ data, categories }: WidgetSectionProps) {
   return (
-    <div className="col-12 col-lg-4 mb-5 mb-lg-0 border-lg-start">
-      <div className="section-heading">
-        <h2>
-          <Link href={url} className="subheading"
-           style={{ color: hover ? 'black' : '#1562A7' }}
-                onMouseEnter={() => setHover(true)}
-                 onMouseLeave={() => setHover(false)}
-          >
-            {title} <span><i className="fa fa-chevron-right"></i></span>
-          </Link>
-        </h2>
-      </div>
+    <div className="row">
+      {categories.map((category) => {
+        const articles = data[category] || [];
+        const [main, ...subs] = articles;
 
-      {items.map((item, idx) => (
-        <article
-          key={idx}
-          className={`news-story pb-3 mb-3 clearfix ${idx < items.length - 1 ? "border-bottom" : ""}`}
-        >
-          {item.image && (
-            <div className="thumbnail">
-              <Link href={item.url}>
-                
-                <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={350} 
-                    height={250} 
-                    className="w-100 d-block "
-                   style={{objectFit:'cover'}}
-                    sizes="(max-width: 600px) 100vw, 600px"
-                  />
-              </Link>
+        return (
+          <div className="col-12 col-md-4 mb-4" key={category}>
+            {/* Category Title */}
+            <div className="section-heading border-bottom pb-2 mb-3">
+              <h5 className="subheading  ">
+                {category} <i className="fa fa-chevron-right"></i>
+              </h5>
             </div>
-          )}
 
-          <h6 className="story-title my-2">
-            <Link className="font story-title" href={item.url}>{item.title}</Link>
-          </h6>
+            {/* Main News */}
+            {main && (
+              <div className="mb-3">
+                {main.image && (
+                  <Link href={main.slug || "#"}>
+                    <Image
+                      src={main.image}
+                      alt={main.title}
+                      width={800} // or your desired width
+                      height={200}
+                      className="w-100 mb-2"
+                      style={{ objectFit: "cover" }}
+                    />
+                  </Link>
+                )}
+                <h6>
+                  <Link href={main.slug || "#"} className="story-title font text-decoration-none">
+                    {main.title}
+                  </Link>
+                </h6>
+                <small className="text-muted">{main.date}</small>
+              </div>
+            )}
 
-          <ul className="byline list-unstyled">
-            <li className="update-font">{item.date}</li>
-          </ul>
-        </article>
-      ))}
+            {/* Sub News */}
+            <div>
+              {subs.slice(0,3).map((item) => (
+                <div key={item.id} className="border-top pt-2 mt-2" >
+                  <Link href={item.slug || "#"} className="story-title font text-decoration-none">
+                    {item.title}
+                  </Link>
+                </div>
+              ))}
+            </div>
+          </div>
+        );
+      })}
     </div>
   );
 }

@@ -92,7 +92,7 @@ export default function News() {
                 <>
                   <h3 className="my-2 fw-bold text-dark">
                     {article.slug ? (
-                      <Link href={article.slug} className="text-decoration-none text-black">
+                      <Link href={article.slug} className="story-title-big  text-decoration-none text-black">
                         {article.title}
                       </Link>
                     ) : (
@@ -104,19 +104,19 @@ export default function News() {
                     {article.author && (
                       <li className="text-secondary">
                         By{' '}
-                        <Link href="#" className="text-decoration-none text-secondary hover-link">
+                        <Link href="#" className="text-decoration-none text-secondary hover-link last-update">
                           {article.author}
                         </Link>
                       </li>
                     )}
-                    <li className="fst-italic text-danger ms-3">• Last updated {article.updated}</li>
+                    <li className="fst-italic text-danger ms-3 last-update">• Last updated {article.updated}</li>
                   </ul>
                 </>
               ) : (
                 <div className="flex-grow-1">
-                  <h3 className="story-title mb-2 article-font">
+                  <h3 className=" mb-2 article-font">
                     {article.slug ? (
-                      <Link href={article.slug} className="text-decoration-none text-black">
+                      <Link href={article.slug} className="story-title  text-decoration-none text-black">
                         {article.title}
                       </Link>
                     ) : (
@@ -128,12 +128,12 @@ export default function News() {
                     {article.author && (
                       <li className="text-secondary">
                         By{' '}
-                        <Link href="#" className="text-decoration-none text-secondary hover-link">
+                        <Link href="#" className="text-decoration-none text-secondary hover-link last-update">
                           {article.author}
                         </Link>
                       </li>
                     )}
-                    <li className="fst-italic text-danger ms-3">• Last updated {article.updated}</li>
+                    <li className="fst-italic text-danger ms-3 last-update">• Last updated {article.updated}</li>
                   </ul>
                 </div>
               )}
@@ -163,13 +163,13 @@ export default function News() {
                   <Image src={article.image} alt={article.title} width={70} height={47} />
                 </Link>
               </div>
-              <h3 className="story-title mb-2 breaking-news">
-                <Link href={article.slug} className="text-black text-decoration-none">
+              <h3 className="mb-2 breaking-news">
+                <Link href={article.slug} className="story-title text-black text-decoration-none">
                   {article.title}
                 </Link>
               </h3>
               <ul className="byline">
-                <li className="fst-italic text-danger me-3">Last updated {article.updated}</li>
+                <li className="fst-italic text-danger me-3 last-update">Last updated {article.updated}</li>
               </ul>
             </article>
           ))}
@@ -252,7 +252,8 @@ export default function News() {
                   <div className="most-popular-heading my-auto">
                     <h3 className="mb-0 my-3">
                       <Link
-                        className="story-title lh-1"
+                        className="story-title fw-bold"
+                        style={{fontSize:'16px'}}
                         href={article.slug}
                         target="_blank"
                         rel="noopener noreferrer"

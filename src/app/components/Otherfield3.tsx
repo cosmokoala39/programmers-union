@@ -3,18 +3,40 @@
 import { useEffect, useState } from 'react';
 import ArticleWidgetGrid from '../props/ArticleWidgetGrid';
 
+
+
+
+type Article = {
+  id: number;
+  category: string;
+  title: string;
+  slug?: string;
+  image?: string;
+  date: string;
+};
 export default function Otherfield3() {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch('/articles/widget3.json')
-      .then(res => res.json())
-      .then(setData);
-  }, []);
-
-  return (
-    <main className="container">
-      {data.length > 0 && <ArticleWidgetGrid data={data} />}
-    </main>
-  );
-}
+  const [data, setData] = useState<Record<string, Article[]>>({});
+    const categories = ["politics", "science", "technology","business"];
+  
+    useEffect(() => {
+      const fetchData = async () => {
+        const results: Record<string, Article[]> = {};
+        await Promise.all(
+          categories.map(async (category) => {
+            const res = await fetch(`/data/${category}.json`);
+            results[category] = await res.json();
+          })
+        );
+        setData(results);
+      };
+  
+      fetchData();
+    }, [])
+  
+    return (
+      <main className="container">
+        <ArticleWidgetGrid data={data} categories={categories} />
+      </main>
+    );
+  }
+  

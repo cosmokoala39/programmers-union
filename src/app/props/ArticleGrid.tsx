@@ -5,11 +5,15 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 interface Article {
+  id: number;
   title: string;
+  shortdescription: string;
   image: string;
-  url: string;
-  date: string;
-  slug:string;
+  slug: string;
+  author: string;
+  updated: string;
+  category?: string;
+  date?: string;
 }
 
 interface ArticleGridProps {
@@ -17,36 +21,41 @@ interface ArticleGridProps {
 }
 
 const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
-  const [data, setData] = useState<{ title: string; link: string; articles: Article[] } | null>(null);
-  const [hover,setHover]=useState(false)
+  const [articles, setArticles] = useState<Article[]>([]);
+  const [hover, setHover] = useState(false);
+
   useEffect(() => {
     fetch(jsonPath)
       .then(res => res.json())
-      .then(json => setData(json));
+      .then((json: Article[]) => setArticles(json))  
+      .catch(err => console.error(err));
   }, [jsonPath]);
 
-  if (!data) return null;
+  if (!Array.isArray(articles) || articles.length === 0) return null;
 
   return (
     <div className="row lg-margin">
       <div className="col-12">
         <div className="section-heading">
           <h2>
-            <Link href={data.link} className='subheading'
-            style={{ color: hover ? 'black' : '#1562A7' }}
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
+            <Link
+              href={`/${articles[0].category ?? ''}`}
+              className="subheading"
+              style={{ color: hover ? 'black' : '#1562A7' }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
             >
-              {data.title} <span><i className="fas fa-chevron-right"></i></span>
+              {articles[0].category} <span><i className="fas fa-chevron-right"></i></span>
             </Link>
           </h2>
         </div>
       </div>
-      {data.articles.map((article, index) => (
-        <div key={index} className="col-12 col-md-6 col-lg-3 border-start">
+
+      {articles.slice(0, 4).map((article) => (
+        <div key={article.id} className="col-12 col-md-6 col-lg-3 border-start">
           <article className="news-story mb-3 clearfix">
             <div className="thumbnail med d-none d-md-block">
-              <Link href={article.url}>
+              <Link href={article.slug}>
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -58,10 +67,12 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
               </Link>
             </div>
             <h3 className="story-title my-2">
-              <Link className='story-title font' href={article.url}>{article.title}</Link>
+              <Link className="story-title font" href={article.slug}>
+                {article.title}
+              </Link>
             </h3>
-            <ul className="byline list-unstyled ">
-              <li className='update-font'>{article.date}</li>
+            <ul className="byline list-unstyled">
+              <li className="update-font">{article.date}</li>
             </ul>
           </article>
         </div>

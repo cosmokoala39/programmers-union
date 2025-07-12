@@ -3,37 +3,37 @@ import WidgetSection from "../props/WidgetSection";
 import { useEffect, useState } from "react";
 
 
+
 type Article = {
+  id: number;
+  category: string;
   title: string;
-  url: string;
+  slug?: string;
   image?: string;
   date: string;
 };
-
-type WidgetData = {
-  title: string;
-  url: string;
-  items: Article[];
-};
-export default function OtherField2(){
-      const [widgets, setWidgets] = useState<WidgetData[]>([]);
+export default function OtherField(){
+  const [data, setData] = useState<Record<string, Article[]>>({});
+  const categories = ["business", "politics", "health"];
 
   useEffect(() => {
-    fetch("/articles/widget2.json")
-      .then((res) => res.json())
-      .then(setWidgets);
+    const fetchData = async () => {
+      const results: Record<string, Article[]> = {};
+      await Promise.all(
+        categories.map(async (category) => {
+          const res = await fetch(`/data/${category}.json`);
+          results[category] = await res.json();
+        })
+      );
+      setData(results);
+    };
+
+    fetchData();
   }, []);
     return(
         <div className="container mb-5">
             <div className="row lg-margin">
-              {widgets.map((widget, idx) => (
-                <WidgetSection
-                  key={idx}
-                  title={widget.title}
-                  url={widget.url}
-                  items={widget.items}
-                />
-              ))}
+              <WidgetSection data={data} categories={categories}/>
             </div>
         </div>
     )
