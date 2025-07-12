@@ -37,7 +37,7 @@ export default function WidgetSection({ data, categories }: WidgetSectionProps) 
             {main && (
               <div className="mb-3">
                 {main.image && (
-                  <Link href={main.slug || "#"}>
+                  <Link href={`${main.category}/${main.slug}`}>
                     <Image
                       src={main.image}
                       alt={main.title}
@@ -49,7 +49,7 @@ export default function WidgetSection({ data, categories }: WidgetSectionProps) 
                   </Link>
                 )}
                 <h6>
-                  <Link href={main.slug || "#"} className="story-title font text-decoration-none">
+                  <Link href={`${main.category}/${main.slug}`} className="story-title font text-decoration-none">
                     {main.title}
                   </Link>
                 </h6>
@@ -61,7 +61,7 @@ export default function WidgetSection({ data, categories }: WidgetSectionProps) 
             <div>
               {subs.slice(0,3).map((item) => (
                 <div key={item.id} className="border-top pt-2 mt-2" >
-                  <Link href={item.slug || "#"} className="story-title font text-decoration-none">
+                  <Link href={`${item.category}/${item.slug}`} className="story-title font text-decoration-none">
                     {item.title}
                   </Link>
                 </div>

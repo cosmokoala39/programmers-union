@@ -9,7 +9,7 @@ import OrigamiAdWidget from "./OrigamiAdWidget";
 
 import PrepWorld from "./PrepWorld";
 import SpecialSection from "./SpecialSection";
-import Wildfire from "./Wildfire";
+
 
 export default function Newswithsidebar(){
     return(
@@ -24,7 +24,7 @@ export default function Newswithsidebar(){
                     <HotDealsIframe/>
                     <HawaiiJobsWidget/>
                     <LocalBusinessGuide/>
-                    <Wildfire/>
+                    
                 </div>
                 <div className="col-12 col-lg-4 col-xl-3">
                     <OrigamiAdWidget/>

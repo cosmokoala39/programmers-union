@@ -11,6 +11,7 @@ interface Article {
   slug: string;
   author: string;
   updated: string;
+  category:string;
 }
 
 export default function News() {
@@ -68,7 +69,7 @@ export default function News() {
                 }}
               >
                 {article.slug ? (
-                  <Link href={article.slug} title={article.title}>
+                  <Link href={`${article.category}/${article.slug}`} title={article.title}>
                     <Image
                       src={article.image}
                       alt={article.title}
@@ -92,7 +93,7 @@ export default function News() {
                 <>
                   <h3 className="my-2 fw-bold text-dark">
                     {article.slug ? (
-                      <Link href={article.slug} className="story-title-big  text-decoration-none text-black">
+                      <Link  href={`${article.category}/${article.slug}`} className="story-title-big  text-decoration-none text-black">
                         {article.title}
                       </Link>
                     ) : (
@@ -116,7 +117,7 @@ export default function News() {
                 <div className="flex-grow-1">
                   <h3 className=" mb-2 article-font">
                     {article.slug ? (
-                      <Link href={article.slug} className="story-title  text-decoration-none text-black">
+                      <Link  href={`${article.category}/${article.slug}`} className="story-title  text-decoration-none text-black">
                         {article.title}
                       </Link>
                     ) : (
@@ -145,12 +146,16 @@ export default function News() {
         <div className="col-12 col-lg-3 mb-5 mb-lg-0 order-2 order-lg-1">
           <div className="section-heading">
             <h2
-              className="breaking-news-head mt-2"
+              className="breaking-news-head mt-2 "
               style={{ color: hover ? 'black' : '#1562A7' }}
               onMouseEnter={() => setHover(true)}
               onMouseLeave={() => setHover(false)}
             >
-              <Link href="#" className="text-decoration-none">
+              <Link href="#" className="text-decoration-none subheading"
+              style={{ color: hover ? 'black' : '#1562A7' }}
+              onMouseEnter={() => setHover(true)}
+              onMouseLeave={() => setHover(false)}
+              >
                 Breaking News <i className="fas fa-chevron-right"></i>
               </Link>
             </h2>
@@ -159,12 +164,12 @@ export default function News() {
           {breakingNews.map((article) => (
             <article key={article.id} className="news-story border-bottom pb-3 mb-3 clearfix">
               <div className="thumbnail small me-3 mb-3 d-none d-md-block float-start">
-                <Link href={article.slug}>
+                <Link  href={`${article.category}/${article.slug}`}>
                   <Image src={article.image} alt={article.title} width={70} height={47} />
                 </Link>
               </div>
               <h3 className="mb-2 breaking-news">
-                <Link href={article.slug} className="story-title text-black text-decoration-none">
+                <Link  href={`${article.category}/${article.slug}`} className="story-title text-black text-decoration-none">
                   {article.title}
                 </Link>
               </h3>
@@ -189,7 +194,7 @@ export default function News() {
           <div className="todays-paper mb-5 clearfix" style={{ fontFamily: 'sans-serif' }}>
             <Link
               className="no-underline text-dark d-block"
-              href="https://gateway.staradvertiser.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -204,7 +209,7 @@ export default function News() {
             </Link>
             <Link
               className="text-decoration-none text-dark d-block mt-2 lh-1"
-              href="https://gateway.staradvertiser.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -215,7 +220,7 @@ export default function News() {
             </small>
             <Link
               className="button-3"
-              href="https://gateway.staradvertiser.com"
+              href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -226,7 +231,7 @@ export default function News() {
           {/* Subscriber Favorites */}
           <div className="mb-4">
             <div className="section-heading">
-              <h2 className="subscriber-favorite">Subscriber Favorites</h2>
+              <h2 className="subscriber-favorite subheading">Subscriber Favorites</h2>
             </div>
 
             <div className="cmg_most_popular_widget-2 d-flex flex-column">
@@ -254,7 +259,7 @@ export default function News() {
                       <Link
                         className="story-title fw-bold"
                         style={{fontSize:'16px'}}
-                        href={article.slug}
+                         href={`${article.category}/${article.slug}`}
                         target="_blank"
                         rel="noopener noreferrer"
                       >

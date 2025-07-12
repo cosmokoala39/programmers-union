@@ -4,7 +4,7 @@ import Link from "next/link";
 interface Article {
   title: string;
   description: string;
-  excerpt: string;
+  shortdescription: string;
   image: string;
   slug: string;
 }
@@ -31,7 +31,7 @@ export default function ArticleContent({ article }: ArticleContentProps) {
         />
          
       </div>
-      <p>{article.excerpt}</p>
+      <p>{article.shortdescription}</p>
       <div>{article.description}</div>
       {/* Comments section */}
       <span id="section-before-comments"></span>

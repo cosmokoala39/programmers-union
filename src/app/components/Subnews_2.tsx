@@ -54,7 +54,7 @@ useEffect(() => {
       <div className="col-12">
         <div className="section-heading">
           <h2 className='breaking-news-head'>
-            <Link  href={articles[0]?.slug || '#'}
+            <Link  href={articles[0]?.category || '#'}
              onMouseEnter={() => setHover(true)}
             onMouseLeave={() => setHover(false)} 
             className='text-decoration-none' style={{ color: hover ? 'black' : '#1562A7' }}
@@ -75,7 +75,7 @@ useEffect(() => {
           {index > 0 && <div className="border-top d-block d-md-none"></div>}
           <article className="news-story mb-3 clearfix ">
             <div >
-              <Link href={article.slug}>
+              <Link  href={`${article.category}/${article.slug}`}>
                 
                   <Image
                     src={article.image}
@@ -90,7 +90,7 @@ useEffect(() => {
             </div>
 
             <h3 className="story-title my-2">
-              <Link href={article.slug} className='text-decoration-none text-black'>
+              <Link  href={`${article.category}/${article.slug}`} className='text-decoration-none text-black'>
                 {article.title}
               </Link>
             </h3>

@@ -15,10 +15,12 @@ interface Article {
   category?: string;
   date?: string;
 }
-
+ 
 interface ArticleGridProps {
   jsonPath: string;
 }
+
+
 
 const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
   const [articles, setArticles] = useState<Article[]>([]);
@@ -55,7 +57,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
         <div key={article.id} className="col-12 col-md-6 col-lg-3 border-start">
           <article className="news-story mb-3 clearfix">
             <div className="thumbnail med d-none d-md-block">
-              <Link href={article.slug}>
+              <Link href={`${article.category}/${article.slug}`}>
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -67,7 +69,7 @@ const ArticleGrid: React.FC<ArticleGridProps> = ({ jsonPath }) => {
               </Link>
             </div>
             <h3 className="story-title my-2">
-              <Link className="story-title font" href={article.slug}>
+              <Link className="story-title font"href={`${article.category}/${article.slug}`}>
                 {article.title}
               </Link>
             </h3>

@@ -46,7 +46,7 @@ export default function SportarticleSmall() {
           {/* Show image only for the first article */}
           {index === 0 && article.image && (
             <div className="thumbnail mb-2">
-              <Link href={`/article/${article.slug}`}>
+              <Link  href={`${article.category}/${article.slug}`}>
                 <Image
                   src={article.image}
                   alt={article.title}
@@ -60,7 +60,7 @@ export default function SportarticleSmall() {
             </div>
           )}
           <h3 className="my-2">
-            <Link className="story-title" href={`/article/${article.slug}`}>
+            <Link className="story-title"  href={`${article.category}/${article.slug}`}>
               {article.title}
             </Link>
           </h3>

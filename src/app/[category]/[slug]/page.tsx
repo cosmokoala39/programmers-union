@@ -1,4 +1,6 @@
-
+import { notFound } from "next/navigation";
+import fs from "fs/promises";
+import path from "path";
 
 import Detail from "../../detail/components/Detail";
 import SubscriberFavorites from "../../sports/components/SubscriberFavorites";
@@ -9,42 +11,47 @@ import MostRecentStories from "../../sports/components/MostRecentStories";
 import ShareToolbar from "@/app/detail/components/ShareToolbar";
 import ArticleContent from "@/app/detail/components/ArticleContent";
 
+interface Article {
+  id: number;
+  category: string;
+  title: string;
+  author: string;
+  authorUrl: string;
+  date: string;
+  updated: string;
+  shortdescription: string;
+  description: string;
+  image: string;
+  slug: string;
+ 
+}
 
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ category: string; slug: string }>;
+}) {
+  const { category, slug } =await  params;
 
-export default async function Page({ params }: { params: Promise<{ category: string; slug: string }> }) {
-  const { category, slug } =await params;
-
-  let articles;
   try {
-    const data = await import(`../../../../public/data/${category}.json`);
-    // Access the main array in the JSON data
-    articles = data.default.main;
-  } catch (error) {
-    console.log(error)
-    return <div>Failed to load data for category: {category}</div>;
-  }
+    const filePath = path.join(process.cwd(), "public", "data", `${category}.json`);
+    const fileContent = await fs.readFile(filePath, "utf-8");
+    const articles: Article[] = JSON.parse(fileContent);
+    const article = articles.find((a) => a.slug === slug);
 
-  // Search for the article using the slug
-  const article = articles.find((item: { slug: string }) => item.slug === slug);
+    if (!article) return notFound();
 
-  if (!article) {
-    return <div>Article not found</div>;
-  }
-
-  return (
-    <>
-      {/* <Mainheading /> */}
+    return (
       <div className="container my-5">
         <div className="row">
           <div className="post-entry-wrapper col-12 col-lg-8 col-xl-8 mb-5 mb-lg-0">
-            
             <div className="row">
               <ShareToolbar />
               <ArticleContent article={article} />
             </div>
             <Detail />
           </div>
-          <div className="sidebar col-12 col-lg-4 col-xl-4 gx-lg-0 ">
+          <div className="sidebar col-12 col-lg-4 col-xl-4 gx-lg-0">
             <div className="mx-2 px-2 me-2">
               <OrigamiAd />
               <SubscriberFavorites />
@@ -59,7 +66,9 @@ export default async function Page({ params }: { params: Promise<{ category: str
           </div>
         </div>
       </div>
-    </>
-  );
+    );
+  } catch (error) {
+    console.error("Error loading article:", error);
+    return notFound();
+  }
 }
-
