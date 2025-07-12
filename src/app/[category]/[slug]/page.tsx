@@ -8,8 +8,9 @@ import OrigamiAd from "../../sports/components/OrigamiAd";
 import LookingBack from "../../sports/components/LookingBack";
 import MidWeek from "../../sports/components/MidWeek";
 import MostRecentStories from "../../sports/components/MostRecentStories";
-import ShareToolbar from "@/app/detail/components/ShareToolbar";
+
 import ArticleContent from "@/app/detail/components/ArticleContent";
+import ClientDetails from "@/app/components/ClientDetails";
 
 interface Article {
   id: number;
@@ -40,14 +41,19 @@ export default async function Page({
     const article = articles.find((a) => a.slug === slug);
 
     if (!article) return notFound();
-
+const isClientSlug = category==="politics" && slug === "puerto-ricos-former-governor-vindicated-in-historic-legal-twist";
     return (
       <div className="container my-5">
         <div className="row">
           <div className="post-entry-wrapper col-12 col-lg-8 col-xl-8 mb-5 mb-lg-0">
             <div className="row">
-              <ShareToolbar />
-              <ArticleContent article={article} />
+              {isClientSlug ? (
+                <ClientDetails  article={article}/>
+              ):(
+                <ArticleContent article={article} />
+              ) }
+              
+              
             </div>
             <Detail />
           </div>

@@ -17,8 +17,9 @@ export default function ArticleContent({ article }: ArticleContentProps) {
   return (
     <div id="article-content" className="post col-12 col-md-11 clearfix">
       {/* Paywall content */}
-      <div className="hsa-paywall">
-        <h2>{article.title}</h2>
+      <h2>{article.title}</h2>
+      <div className="hsa-paywall p-5">
+        
        
         {/* Display the image from the article */}
         <Image

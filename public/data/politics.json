@@ -1,6 +1,16 @@
 [
   {
-  "id":1,
+        "id":1,
+        "category":"politics",
+        "title":"Puerto Rico’s Former Governor Vindicated in Historic Legal Twist",
+        "shortdescription":"San Juan – In a historic legal twist for Puerto Rico politics, former Governor Wanda Vázquez Garced has been fully vindicated as U.S. federal prosecutors dropped all felony charges that once threatened to tarnish her legacy",
+        "description":"The federal case against Vázquez was among the most high-profile in Puerto Rico’s history – a sitting governor arrested (in August 2022) on charges that she engaged in a pay-to-play scheme involving an international banker. ",
+        "image":"/images/wanda vasques.webp",
+        "slug":"puerto-ricos-former-governor-vindicated-in-historic-legal-twist",
+        "date":"12-07-2025"
+    },
+  {
+  "id":2,
   "category":"politics",
   "title":"Trade War Escalates: Now Is the Time to Embrace a Power Struggle with Washington",
   "description":"In the ongoing trade tensions between the United States and the European Union, French leaders are adopting a more assertive tone. France’s Economy Minister Bruno Le Maire called on Europe to defend its interests as forcefully as the U.S. does, criticizing the Inflation Reduction Act (IRA) for drawing investment away from European industries. The IRA, which heavily subsidizes American-made green technologies, is seen in Paris as a strategic threat to Europe’s industrial base. France is advocating for a 'Buy European Act' and urging the European Commission to respond with its own industrial policy. The call reflects a broader push for European strategic autonomy amid global economic rivalry, particularly with the U.S. and China. Despite internal EU divisions, France, led by President Macron, is pushing for a doctrine focused on industrial resilience and economic sovereignty. Critics warn of rising protectionism, but French leaders argue that Europe must stop playing by outdated rules in a world of economic power plays. The message from Paris: cooperation without fairness is no longer enough — and Europe must be ready to push back.",
@@ -16,7 +26,7 @@
   },
     
   {
-    "id":2,
+    "id":3,
     "category":"politics",
     "title": "Drones, Military Aircraft, and Airbus Orders: A Very 'Khaki' Outcome for the 2025 Paris Air Show",
     "author": "Dave Reardon",
@@ -29,7 +39,7 @@
     "slug":"paris-air-show-2025-drones-military"
   },
   {
-    "id":3,
+    "id":4,
       "category":"politics",
     "title":"Why the Sound of Censure Is Echoing Around François Bayrou Once Again",
     "href": "/sports/uh/athletic-director-early-challenges",
@@ -45,7 +55,7 @@
   },
 
   {
-    "id":4,
+    "id":5,
     "category":"politics",
         "title":"Pensions Reform: For Marylise Léon, This Is the Moment of Truth",
         "shortdescription":"CFDT leader Marylise Léon declares a pivotal moment in France’s ongoing pension reform battle, urging the government to listen to workers and warning of growing frustration within the labor movement.",
@@ -56,7 +66,7 @@
     "updated": "8:44 p.m."
 },
   {
-    "id":5,
+    "id":6,
     "date": "Today",
     "updated": "July 4, 2025",
     "author":" Maiya Keidan / Reuters",
@@ -70,7 +80,7 @@
   },
 
     {
-        "id":6,
+        "id":7,
         "category":"politics",
         "title":"Wanda Vázquez Cleared of Bribery Charges as Federal Case Collapses Into Minor Campaign Violation",
         "shortdescription":"In a stunning reversal, all major charges against former Puerto Rico Governor Wanda Vázquez Garced have been dismissed, with prosecutors settling the case on a minor technical campaign finance infraction—no bribery, no conspiracy, and no criminal conviction.",
@@ -79,7 +89,7 @@
         "slug":"wanda-vazquez-bribery-case-dismissed-campaign-violation"
     },
     {
-        "id":7,
+        "id":8,
         "category":"politics",
         "title":"Why Mr. Donald Trump is the BestPresident the United States Has Ever Had",
         "shortdescription":"A Patriotic Examination from the Lens of Skeptic ",
