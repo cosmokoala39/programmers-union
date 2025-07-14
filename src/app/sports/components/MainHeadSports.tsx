@@ -13,7 +13,7 @@ export type Post = {
   authorUrl?: string;
   date: string;
   updated: string;
-  excerpt: string;
+  shortdescription: string;
   comments?: number;
 };
 
@@ -70,7 +70,7 @@ export default function MainPostWithNextPosts({ mainPost, nextPosts }: Props) {
                 </li>
               </ul>
               <p className="excerpt mt-3 mb-0">
-                {mainPost.excerpt}{' '}
+                {mainPost.shortdescription}{' '}
                 <Link className="fw-bold" href={generateHref(mainPost)}>
                   Read more
                 </Link>
@@ -131,7 +131,7 @@ export default function MainPostWithNextPosts({ mainPost, nextPosts }: Props) {
                         </li>
                       </ul>
                       <p className="excerpt mt-3 mb-0">
-                        {post.excerpt}{' '}
+                        {post.shortdescription}{' '}
                         <Link className="fw-bold" href={generateHref(post)}>
                           Read more
                         </Link>

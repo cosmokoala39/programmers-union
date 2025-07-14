@@ -30,7 +30,7 @@ export default function ClientDetails({ article }: ClientDetailsProps) {
           width={800} // replace with actual width
           height={600} // replace with actual height
         />
-         <div className="p-2 pt-4 font text-dark">
+         <div className=" pt-4 font text-dark">
               <p><strong>San Juan –</strong>In a historic legal twist for Puerto Rico politics, former Governor Wanda Vázquez
                 Garced has been fully vindicated as U.S. federal prosecutors dropped all felony charges that
                 once threatened to tarnish her legacy. The once-brash accusations of bribery and conspiracy
